@@ -99,16 +99,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao.cs" />
-    <Compile Include="loginTela.cs">
+    <Compile Include="LoginTela.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginTela.Designer.cs">
-      <DependentUpon>loginTela.cs</DependentUpon>
+    <Compile Include="LoginTela.Designer.cs">
+      <DependentUpon>LoginTela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTela.Designer.cs">
+      <DependentUpon>MenuTela.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="loginTela.resx">
-      <DependentUpon>loginTela.cs</DependentUpon>
+    <EmbeddedResource Include="LoginTela.resx">
+      <DependentUpon>LoginTela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTela.resx">
+      <DependentUpon>MenuTela.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -40,3 +40,4 @@ C:\Users\Edu\source\repos\SistemaLojaDeCarros\SistemaLojaDeCarros\obj\Debug\Sist
 C:\Users\Edu\source\repos\SistemaLojaDeCarros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.csproj.CopyComplete
 C:\Users\Edu\source\repos\SistemaLojaDeCarros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.exe
 C:\Users\Edu\source\repos\SistemaLojaDeCarros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.pdb
+C:\Users\Edu\source\repos\SistemaLojaDeCarros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.MenuTela.resources

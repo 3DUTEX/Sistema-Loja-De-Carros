@@ -16,7 +16,7 @@ namespace SistemaLojaDeCarros
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginTela());
+            Application.Run(new LoginTela());
         }
     }
 }

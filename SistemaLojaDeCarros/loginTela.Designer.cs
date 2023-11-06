@@ -1,6 +1,6 @@
 ﻿namespace SistemaLojaDeCarros
 {
-    partial class loginTela
+    partial class LoginTela
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -34,6 +34,7 @@
             this.txtBoxSenha = new System.Windows.Forms.TextBox();
             this.btnLogar = new System.Windows.Forms.Button();
             this.tituloLabel = new System.Windows.Forms.Label();
+            this.cbMostrarSenha = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // loginLabel
@@ -71,6 +72,7 @@
             this.txtBoxSenha.Name = "txtBoxSenha";
             this.txtBoxSenha.Size = new System.Drawing.Size(204, 29);
             this.txtBoxSenha.TabIndex = 3;
+            this.txtBoxSenha.UseSystemPasswordChar = true;
             // 
             // btnLogar
             // 
@@ -81,6 +83,7 @@
             this.btnLogar.TabIndex = 4;
             this.btnLogar.Text = "Logar";
             this.btnLogar.UseVisualStyleBackColor = true;
+            this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
             // 
             // tituloLabel
             // 
@@ -92,11 +95,23 @@
             this.tituloLabel.TabIndex = 5;
             this.tituloLabel.Text = "Por favor, entre com o seu usuário..";
             // 
+            // cbMostrarSenha
+            // 
+            this.cbMostrarSenha.AutoSize = true;
+            this.cbMostrarSenha.Location = new System.Drawing.Point(290, 241);
+            this.cbMostrarSenha.Name = "cbMostrarSenha";
+            this.cbMostrarSenha.Size = new System.Drawing.Size(95, 17);
+            this.cbMostrarSenha.TabIndex = 6;
+            this.cbMostrarSenha.Text = "Mostrar Senha";
+            this.cbMostrarSenha.UseVisualStyleBackColor = true;
+            this.cbMostrarSenha.CheckedChanged += new System.EventHandler(this.cbMostrarSenha_CheckedChanged);
+            // 
             // loginTela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 413);
+            this.Controls.Add(this.cbMostrarSenha);
             this.Controls.Add(this.tituloLabel);
             this.Controls.Add(this.btnLogar);
             this.Controls.Add(this.txtBoxSenha);
@@ -106,6 +121,7 @@
             this.Name = "loginTela";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.loginTela_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,6 +135,7 @@
         private System.Windows.Forms.TextBox txtBoxSenha;
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Label tituloLabel;
+        private System.Windows.Forms.CheckBox cbMostrarSenha;
     }
 }
 
