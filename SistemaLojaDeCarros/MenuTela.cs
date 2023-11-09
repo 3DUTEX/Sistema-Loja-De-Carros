@@ -16,5 +16,24 @@ namespace SistemaLojaDeCarros
         {
             InitializeComponent();
         }
+
+        private void MenuTela_Load(object sender, EventArgs e)
+        {
+            lblUsuLogado.Text = LoginTela.usuarioConectado;
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            cliente.Show();
+            this.Hide();
+        }
+
+        private void btnVeiculo_Click(object sender, EventArgs e)
+        {
+            Veiculo veiculo = new Veiculo();
+            veiculo.Show();
+            this.Hide();
+        }
     }
 }

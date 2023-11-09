@@ -98,7 +98,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroCliente.Designer.cs">
+      <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroVeiculo.Designer.cs">
+      <DependentUpon>CadastroVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexao.cs" />
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVeiculo.Designer.cs">
+      <DependentUpon>ConsultarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstilizacaoButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExcluirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirCliente.Designer.cs">
+      <DependentUpon>ExcluirCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirVeiculo.Designer.cs">
+      <DependentUpon>ExcluirVeiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginTela.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +158,33 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Veiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo.Designer.cs">
+      <DependentUpon>Veiculo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CadastroCliente.resx">
+      <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroVeiculo.resx">
+      <DependentUpon>CadastroVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVeiculo.resx">
+      <DependentUpon>ConsultarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirCliente.resx">
+      <DependentUpon>ExcluirCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirVeiculo.resx">
+      <DependentUpon>ExcluirVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginTela.resx">
       <DependentUpon>LoginTela.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +200,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Veiculo.resx">
+      <DependentUpon>Veiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
