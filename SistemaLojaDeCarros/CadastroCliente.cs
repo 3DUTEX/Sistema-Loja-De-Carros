@@ -16,5 +16,11 @@ namespace SistemaLojaDeCarros
         {
             InitializeComponent();
         }
+
+        private  void btnTelaEndereco_Click(object sender, EventArgs e)
+        {
+            CadastroEndereco telaEndereco = new CadastroEndereco();
+            telaEndereco.Show();
+        }
     }
 }

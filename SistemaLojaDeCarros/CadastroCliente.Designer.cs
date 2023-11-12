@@ -124,6 +124,7 @@
             this.btnTelaEndereco.TabIndex = 13;
             this.btnTelaEndereco.Text = "Cadastrar Endereço";
             this.btnTelaEndereco.UseVisualStyleBackColor = true;
+            this.btnTelaEndereco.Click += new System.EventHandler(this.btnTelaEndereco_Click);
             // 
             // lblTituloCliente
             // 

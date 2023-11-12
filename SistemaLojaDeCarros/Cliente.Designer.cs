@@ -154,6 +154,7 @@
             this.Controls.Add(this.panelInfoCliente);
             this.Controls.Add(this.panelCliente);
             this.Name = "Cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
             this.panelCliente.ResumeLayout(false);
             this.panelClienteCabecalio.ResumeLayout(false);

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaLojaDeCarros
@@ -17,9 +10,45 @@ namespace SistemaLojaDeCarros
             InitializeComponent();
         }
 
-        private void btnEnderecoProx_Click(object sender, EventArgs e)
+
+        private void btnEnderecoCada_Click(object sender, EventArgs e)
         {
-            // CODIGO
+            // Validando se os campos estão vazios
+            if (validaForm())
+            {
+                
+            }
+        }
+
+        private void msgErro(string msg)
+        {
+            MessageBox.Show(msg, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private bool validaForm()
+        {
+            if (txtBoxLog.Text.Length == 0)
+            {
+                msgErro("Logradouro não pode estar vazio!");
+                return false;
+            }
+            if (txtBoxNum.Text.Length == 0)
+            {
+                msgErro("Número não pode estar vazio!");
+                return false;
+            }
+            if (txtBoxBairro.Text.Length == 0)
+            {
+                msgErro("Bairro não pode estar vazio!");
+                return false;
+            }
+            if (txtBoxCidade.Text.Length == 0)
+            {
+                msgErro("Cidade não pode estar vazio!");
+                return false;
+            }
+
+            return true;
         }
     }
 }

@@ -39,8 +39,7 @@
             this.txtBoxCidade = new System.Windows.Forms.TextBox();
             this.lblNumLog = new System.Windows.Forms.Label();
             this.txtBoxNum = new System.Windows.Forms.TextBox();
-            this.btnEnderecoProx = new System.Windows.Forms.Button();
-            this.lblPassos = new System.Windows.Forms.Label();
+            this.btnEnderecoCada = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtBoxLog
@@ -154,36 +153,24 @@
             this.txtBoxNum.Size = new System.Drawing.Size(60, 31);
             this.txtBoxNum.TabIndex = 9;
             // 
-            // btnEnderecoProx
+            // btnEnderecoCada
             // 
-            this.btnEnderecoProx.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEnderecoProx.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnderecoProx.Location = new System.Drawing.Point(321, 400);
-            this.btnEnderecoProx.Name = "btnEnderecoProx";
-            this.btnEnderecoProx.Size = new System.Drawing.Size(207, 60);
-            this.btnEnderecoProx.TabIndex = 11;
-            this.btnEnderecoProx.Text = "Próximo";
-            this.btnEnderecoProx.UseVisualStyleBackColor = true;
-            this.btnEnderecoProx.Click += new System.EventHandler(this.btnEnderecoProx_Click);
+            this.btnEnderecoCada.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEnderecoCada.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnderecoCada.Location = new System.Drawing.Point(322, 403);
+            this.btnEnderecoCada.Name = "btnEnderecoCada";
+            this.btnEnderecoCada.Size = new System.Drawing.Size(207, 60);
+            this.btnEnderecoCada.TabIndex = 12;
+            this.btnEnderecoCada.Text = "Cadastrar Endereço";
+            this.btnEnderecoCada.UseVisualStyleBackColor = true;
+            this.btnEnderecoCada.Click += new System.EventHandler(this.btnEnderecoCada_Click);
             // 
-            // lblPassos
-            // 
-            this.lblPassos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblPassos.AutoSize = true;
-            this.lblPassos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassos.Location = new System.Drawing.Point(374, 108);
-            this.lblPassos.Name = "lblPassos";
-            this.lblPassos.Size = new System.Drawing.Size(114, 25);
-            this.lblPassos.TabIndex = 12;
-            this.lblPassos.Text = "Passo: 1/2";
-            // 
-            // CadastroCliente
+            // CadastroEndereco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 578);
-            this.Controls.Add(this.lblPassos);
-            this.Controls.Add(this.btnEnderecoProx);
+            this.Controls.Add(this.btnEnderecoCada);
             this.Controls.Add(this.lblNumLog);
             this.Controls.Add(this.txtBoxNum);
             this.Controls.Add(this.lblCidade);
@@ -195,7 +182,8 @@
             this.Controls.Add(this.lblLogradouro);
             this.Controls.Add(this.lblTituloEnder);
             this.Controls.Add(this.txtBoxLog);
-            this.Name = "CadastroCliente";
+            this.Name = "CadastroEndereco";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastre um cliente";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -215,7 +203,6 @@
         private System.Windows.Forms.TextBox txtBoxCidade;
         private System.Windows.Forms.Label lblNumLog;
         private System.Windows.Forms.TextBox txtBoxNum;
-        private System.Windows.Forms.Button btnEnderecoProx;
-        private System.Windows.Forms.Label lblPassos;
+        private System.Windows.Forms.Button btnEnderecoCada;
     }
 }
