@@ -30,11 +30,11 @@
         {
             this.lblCliente = new System.Windows.Forms.Label();
             this.panelCliente = new System.Windows.Forms.Panel();
-            this.panelClienteCabecalio = new System.Windows.Forms.Panel();
-            this.btnCadCliente = new System.Windows.Forms.Button();
-            this.btnConsultarCliente = new System.Windows.Forms.Button();
-            this.btnExcluirCliente = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.btnExcluirCliente = new System.Windows.Forms.Button();
+            this.btnConsultarCliente = new System.Windows.Forms.Button();
+            this.btnCadCliente = new System.Windows.Forms.Button();
+            this.panelClienteCabecalio = new System.Windows.Forms.Panel();
             this.panelInfoCliente = new System.Windows.Forms.Panel();
             this.panelCliente.SuspendLayout();
             this.panelClienteCabecalio.SuspendLayout();
@@ -43,10 +43,10 @@
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.Location = new System.Drawing.Point(23, 39);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(151, 22);
+            this.lblCliente.Size = new System.Drawing.Size(140, 24);
             this.lblCliente.TabIndex = 0;
             this.lblCliente.Text = "Área do Cliente";
             // 
@@ -64,6 +64,70 @@
             this.panelCliente.Size = new System.Drawing.Size(200, 450);
             this.panelCliente.TabIndex = 4;
             // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.DarkGray;
+            this.btnMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnMenu.FlatAppearance.BorderSize = 3;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(0, 427);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(200, 23);
+            this.btnMenu.TabIndex = 5;
+            this.btnMenu.Text = "Voltar ao Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnExcluirCliente
+            // 
+            this.btnExcluirCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExcluirCliente.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnExcluirCliente.FlatAppearance.BorderSize = 3;
+            this.btnExcluirCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnExcluirCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExcluirCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirCliente.Location = new System.Drawing.Point(0, 200);
+            this.btnExcluirCliente.Name = "btnExcluirCliente";
+            this.btnExcluirCliente.Size = new System.Drawing.Size(200, 50);
+            this.btnExcluirCliente.TabIndex = 7;
+            this.btnExcluirCliente.Text = "Excluir";
+            this.btnExcluirCliente.UseVisualStyleBackColor = true;
+            this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
+            // 
+            // btnConsultarCliente
+            // 
+            this.btnConsultarCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultarCliente.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnConsultarCliente.FlatAppearance.BorderSize = 3;
+            this.btnConsultarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnConsultarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConsultarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarCliente.Location = new System.Drawing.Point(0, 150);
+            this.btnConsultarCliente.Name = "btnConsultarCliente";
+            this.btnConsultarCliente.Size = new System.Drawing.Size(200, 50);
+            this.btnConsultarCliente.TabIndex = 6;
+            this.btnConsultarCliente.Text = "Consultar";
+            this.btnConsultarCliente.UseVisualStyleBackColor = true;
+            this.btnConsultarCliente.Click += new System.EventHandler(this.btnConsultarCliente_Click);
+            // 
+            // btnCadCliente
+            // 
+            this.btnCadCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadCliente.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnCadCliente.FlatAppearance.BorderSize = 3;
+            this.btnCadCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCadCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadCliente.Location = new System.Drawing.Point(0, 100);
+            this.btnCadCliente.Name = "btnCadCliente";
+            this.btnCadCliente.Size = new System.Drawing.Size(200, 50);
+            this.btnCadCliente.TabIndex = 5;
+            this.btnCadCliente.Text = "Cadastrar";
+            this.btnCadCliente.UseVisualStyleBackColor = true;
+            this.btnCadCliente.Click += new System.EventHandler(this.btnCadCliente_Click);
+            // 
             // panelClienteCabecalio
             // 
             this.panelClienteCabecalio.BackColor = System.Drawing.Color.DimGray;
@@ -73,70 +137,6 @@
             this.panelClienteCabecalio.Name = "panelClienteCabecalio";
             this.panelClienteCabecalio.Size = new System.Drawing.Size(200, 100);
             this.panelClienteCabecalio.TabIndex = 0;
-            // 
-            // btnCadCliente
-            // 
-            this.btnCadCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCadCliente.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnCadCliente.FlatAppearance.BorderSize = 3;
-            this.btnCadCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCadCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCadCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadCliente.Location = new System.Drawing.Point(0, 100);
-            this.btnCadCliente.Name = "btnCadCliente";
-            this.btnCadCliente.Size = new System.Drawing.Size(200, 50);
-            this.btnCadCliente.TabIndex = 5;
-            this.btnCadCliente.Text = "Cadastrar";
-            this.btnCadCliente.UseVisualStyleBackColor = true;
-            this.btnCadCliente.Click += new System.EventHandler(this.btnCadCliente_Click);
-            // 
-            // btnConsultarCliente
-            // 
-            this.btnConsultarCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultarCliente.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnConsultarCliente.FlatAppearance.BorderSize = 3;
-            this.btnConsultarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnConsultarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConsultarCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarCliente.Location = new System.Drawing.Point(0, 150);
-            this.btnConsultarCliente.Name = "btnConsultarCliente";
-            this.btnConsultarCliente.Size = new System.Drawing.Size(200, 50);
-            this.btnConsultarCliente.TabIndex = 6;
-            this.btnConsultarCliente.Text = "Consultar";
-            this.btnConsultarCliente.UseVisualStyleBackColor = true;
-            this.btnConsultarCliente.Click += new System.EventHandler(this.btnConsultarCliente_Click);
-            // 
-            // btnExcluirCliente
-            // 
-            this.btnExcluirCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExcluirCliente.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnExcluirCliente.FlatAppearance.BorderSize = 3;
-            this.btnExcluirCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnExcluirCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExcluirCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirCliente.Location = new System.Drawing.Point(0, 200);
-            this.btnExcluirCliente.Name = "btnExcluirCliente";
-            this.btnExcluirCliente.Size = new System.Drawing.Size(200, 50);
-            this.btnExcluirCliente.TabIndex = 7;
-            this.btnExcluirCliente.Text = "Excluir";
-            this.btnExcluirCliente.UseVisualStyleBackColor = true;
-            this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.BackColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnMenu.FlatAppearance.BorderSize = 3;
-            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.Location = new System.Drawing.Point(0, 427);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(200, 23);
-            this.btnMenu.TabIndex = 5;
-            this.btnMenu.Text = "Voltar ao Menu";
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // panelInfoCliente
             // 

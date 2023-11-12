@@ -39,6 +39,7 @@
             // 
             // loginLabel
             // 
+            this.loginLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loginLabel.AutoSize = true;
             this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginLabel.Location = new System.Drawing.Point(211, 133);
@@ -49,6 +50,7 @@
             // 
             // senhaLabel
             // 
+            this.senhaLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.senhaLabel.AutoSize = true;
             this.senhaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.senhaLabel.Location = new System.Drawing.Point(211, 195);
@@ -59,6 +61,7 @@
             // 
             // txtBoxLogin
             // 
+            this.txtBoxLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxLogin.Location = new System.Drawing.Point(290, 133);
             this.txtBoxLogin.Name = "txtBoxLogin";
@@ -67,6 +70,7 @@
             // 
             // txtBoxSenha
             // 
+            this.txtBoxSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxSenha.Location = new System.Drawing.Point(290, 192);
             this.txtBoxSenha.Name = "txtBoxSenha";
@@ -76,6 +80,7 @@
             // 
             // btnLogar
             // 
+            this.btnLogar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogar.Location = new System.Drawing.Point(262, 276);
             this.btnLogar.Name = "btnLogar";
@@ -87,6 +92,7 @@
             // 
             // tituloLabel
             // 
+            this.tituloLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tituloLabel.AutoSize = true;
             this.tituloLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tituloLabel.Location = new System.Drawing.Point(211, 53);
@@ -97,6 +103,7 @@
             // 
             // cbMostrarSenha
             // 
+            this.cbMostrarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbMostrarSenha.AutoSize = true;
             this.cbMostrarSenha.Location = new System.Drawing.Point(290, 241);
             this.cbMostrarSenha.Name = "cbMostrarSenha";
@@ -106,7 +113,7 @@
             this.cbMostrarSenha.UseVisualStyleBackColor = true;
             this.cbMostrarSenha.CheckedChanged += new System.EventHandler(this.cbMostrarSenha_CheckedChanged);
             // 
-            // loginTela
+            // LoginTela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +125,7 @@
             this.Controls.Add(this.txtBoxLogin);
             this.Controls.Add(this.senhaLabel);
             this.Controls.Add(this.loginLabel);
-            this.Name = "loginTela";
+            this.Name = "LoginTela";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.loginTela_Load);

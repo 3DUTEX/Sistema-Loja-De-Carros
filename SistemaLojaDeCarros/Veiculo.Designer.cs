@@ -61,7 +61,7 @@
             this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnMenu.FlatAppearance.BorderSize = 3;
             this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.Location = new System.Drawing.Point(0, 427);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(200, 23);
@@ -77,7 +77,7 @@
             this.btnExcluirVeiculo.FlatAppearance.BorderSize = 3;
             this.btnExcluirVeiculo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnExcluirVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExcluirVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluirVeiculo.Location = new System.Drawing.Point(0, 200);
             this.btnExcluirVeiculo.Name = "btnExcluirVeiculo";
             this.btnExcluirVeiculo.Size = new System.Drawing.Size(200, 50);
@@ -93,7 +93,7 @@
             this.btnConsultarVeiculo.FlatAppearance.BorderSize = 3;
             this.btnConsultarVeiculo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnConsultarVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConsultarVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarVeiculo.Location = new System.Drawing.Point(0, 150);
             this.btnConsultarVeiculo.Name = "btnConsultarVeiculo";
             this.btnConsultarVeiculo.Size = new System.Drawing.Size(200, 50);
@@ -109,7 +109,7 @@
             this.btnCadVeiculo.FlatAppearance.BorderSize = 3;
             this.btnCadVeiculo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCadVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCadVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadVeiculo.Location = new System.Drawing.Point(0, 100);
             this.btnCadVeiculo.Name = "btnCadVeiculo";
             this.btnCadVeiculo.Size = new System.Drawing.Size(200, 50);
@@ -130,7 +130,7 @@
             // 
             // lblVeiculo
             // 
-            this.lblVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVeiculo.Location = new System.Drawing.Point(23, 39);
             this.lblVeiculo.Name = "lblVeiculo";
             this.lblVeiculo.Size = new System.Drawing.Size(155, 24);
