@@ -22,6 +22,7 @@ namespace SistemaLojaDeCarros
         //declarando as variáveis do usuário logado
         public bool logado = false;
         public static string usuarioConectado;
+        public static int cdgUsuarioConectado;
         public LoginTela()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace SistemaLojaDeCarros
 
         private void loginTela_Load(object sender, EventArgs e)
         {
-
+            // AO CARREGAR A TELA
         }
 
         private void cbMostrarSenha_CheckedChanged(object sender, EventArgs e)
@@ -42,28 +43,32 @@ namespace SistemaLojaDeCarros
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            DataTable dados = new DataTable();
-            MySqlDataAdapter Data = new MySqlDataAdapter("SELECT * FROM LOGINFUNC WHERE  NM_USUARIO=@USER AND NO_SENHA=@SENHA", con.MyConnectarBD()); // Procurando Login no BD
+            MySqlCommand selectUser = new MySqlCommand($"SELECT * FROM LOGINFUNC WHERE NM_USUARIO= '{txtBoxLogin.Text}' AND NO_SENHA = '{txtBoxSenha.Text}' ", con.MyConnectarBD());
+                                                         
+            MySqlDataReader reader = selectUser.ExecuteReader();
 
-            Data.SelectCommand.Parameters.AddWithValue("@USER", txtBoxLogin.Text);
-            Data.SelectCommand.Parameters.AddWithValue("@SENHA", txtBoxSenha.Text);
-
-            Data.Fill(dados);
-
-            if (dados.Rows.Count == 0)
+            // Se achar registro atribui as variáveis
+            while (reader.Read())
+            {
+                cdgUsuarioConectado = int.Parse(reader["cdg_loginFunc"].ToString());
+                usuarioConectado = reader["nm_usuario"].ToString();
+            }
+            
+            if (usuarioConectado == null)
             {
                 logado = false;
                 MessageBox.Show("USUARIO/SENHA INVÁLIDOS");
+                reader.Close();
             }
             else
             {
-                usuarioConectado = txtBoxLogin.Text;
                 logado = true;
                 MenuTela menu = new MenuTela();
                 menu.Show();
                 this.Hide();
 
                 MessageBox.Show("SEJA BEM VINDO AO SISTEMA, TOME CUIDADO!");
+                reader.Close();
             }
         }
     }

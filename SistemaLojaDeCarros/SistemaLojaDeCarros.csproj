@@ -104,6 +104,12 @@
     <Compile Include="CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroEndereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroEndereco.Designer.cs">
+      <DependentUpon>CadastroEndereco.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </Compile>
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroEndereco.resx">
+      <DependentUpon>CadastroEndereco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroVeiculo.resx">
       <DependentUpon>CadastroVeiculo.cs</DependentUpon>
