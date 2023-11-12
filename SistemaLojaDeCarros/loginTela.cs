@@ -1,12 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaLojaDeCarros
@@ -18,6 +11,9 @@ namespace SistemaLojaDeCarros
 
         //Instânciando ação para executar script sql
         MySqlCommand cmd = new MySqlCommand();
+
+
+        Banco banco = new Banco();
 
         //declarando as variáveis do usuário logado
         public bool logado = false;
@@ -43,22 +39,23 @@ namespace SistemaLojaDeCarros
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            MySqlCommand selectUser = new MySqlCommand($"SELECT * FROM LOGINFUNC WHERE NM_USUARIO= '{txtBoxLogin.Text}' AND NO_SENHA = '{txtBoxSenha.Text}' ", con.MyConnectarBD());
-                                                         
-            MySqlDataReader reader = selectUser.ExecuteReader();
-
-            // Se achar registro atribui as variáveis
-            while (reader.Read())
+            // using faz com que a instância do MySqlDataReader seja descartada depois de utilizada, fechando a conexão
+            using (MySqlDataReader reader = banco.select($"SELECT * FROM LOGINFUNC WHERE NM_USUARIO= '{txtBoxLogin.Text}' AND NO_SENHA = '{txtBoxSenha.Text}' "))
             {
-                cdgUsuarioConectado = int.Parse(reader["cdg_loginFunc"].ToString());
-                usuarioConectado = reader["nm_usuario"].ToString();
+                // Se achar registro atribui as variáveis
+                while (reader.Read())
+                {
+                    cdgUsuarioConectado = int.Parse(reader["cdg_loginFunc"].ToString());
+                    usuarioConectado = reader["nm_usuario"].ToString();
+                }
+
+                reader.Close();
             }
-            
+
             if (usuarioConectado == null)
             {
                 logado = false;
                 MessageBox.Show("USUARIO/SENHA INVÁLIDOS");
-                reader.Close();
             }
             else
             {
@@ -68,7 +65,6 @@ namespace SistemaLojaDeCarros
                 this.Hide();
 
                 MessageBox.Show("SEJA BEM VINDO AO SISTEMA, TOME CUIDADO!");
-                reader.Close();
             }
         }
     }
