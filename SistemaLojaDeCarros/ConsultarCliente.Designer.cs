@@ -28,26 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblConsultarCli = new System.Windows.Forms.Label();
+            this.lblPesqId = new System.Windows.Forms.Label();
+            this.lblPesqName = new System.Windows.Forms.Label();
+            this.txtPesqName = new System.Windows.Forms.TextBox();
+            this.txtPesqId = new System.Windows.Forms.TextBox();
+            this.dtGridClientes = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGridClientes)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblConsultarCli
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(357, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Consultar Cliente";
+            this.lblConsultarCli.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblConsultarCli.AutoSize = true;
+            this.lblConsultarCli.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConsultarCli.Location = new System.Drawing.Point(318, 31);
+            this.lblConsultarCli.Name = "lblConsultarCli";
+            this.lblConsultarCli.Size = new System.Drawing.Size(167, 22);
+            this.lblConsultarCli.TabIndex = 3;
+            this.lblConsultarCli.Text = "Consultar Cliente";
+            // 
+            // lblPesqId
+            // 
+            this.lblPesqId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPesqId.AutoSize = true;
+            this.lblPesqId.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesqId.Location = new System.Drawing.Point(173, 115);
+            this.lblPesqId.Name = "lblPesqId";
+            this.lblPesqId.Size = new System.Drawing.Size(143, 18);
+            this.lblPesqId.TabIndex = 4;
+            this.lblPesqId.Text = "Pesquisar por Id:";
+            // 
+            // lblPesqName
+            // 
+            this.lblPesqName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPesqName.AutoSize = true;
+            this.lblPesqName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesqName.Location = new System.Drawing.Point(144, 169);
+            this.lblPesqName.Name = "lblPesqName";
+            this.lblPesqName.Size = new System.Drawing.Size(172, 18);
+            this.lblPesqName.TabIndex = 5;
+            this.lblPesqName.Text = "Pesquisar por nome:";
+            // 
+            // txtPesqName
+            // 
+            this.txtPesqName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPesqName.Location = new System.Drawing.Point(322, 170);
+            this.txtPesqName.Name = "txtPesqName";
+            this.txtPesqName.Size = new System.Drawing.Size(175, 20);
+            this.txtPesqName.TabIndex = 7;
+            // 
+            // txtPesqId
+            // 
+            this.txtPesqId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPesqId.Location = new System.Drawing.Point(322, 116);
+            this.txtPesqId.Name = "txtPesqId";
+            this.txtPesqId.Size = new System.Drawing.Size(100, 20);
+            this.txtPesqId.TabIndex = 8;
+            // 
+            // dtGridClientes
+            // 
+            this.dtGridClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtGridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGridClientes.Location = new System.Drawing.Point(107, 233);
+            this.dtGridClientes.Name = "dtGridClientes";
+            this.dtGridClientes.Size = new System.Drawing.Size(579, 150);
+            this.dtGridClientes.TabIndex = 9;
             // 
             // ConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(809, 422);
+            this.Controls.Add(this.dtGridClientes);
+            this.Controls.Add(this.txtPesqId);
+            this.Controls.Add(this.txtPesqName);
+            this.Controls.Add(this.lblPesqName);
+            this.Controls.Add(this.lblPesqId);
+            this.Controls.Add(this.lblConsultarCli);
             this.Name = "ConsultarCliente";
             this.Text = "ConsultarCliente";
+            ((System.ComponentModel.ISupportInitialize)(this.dtGridClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -55,6 +116,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblConsultarCli;
+        private System.Windows.Forms.Label lblPesqId;
+        private System.Windows.Forms.Label lblPesqName;
+        private System.Windows.Forms.TextBox txtPesqName;
+        private System.Windows.Forms.TextBox txtPesqId;
+        private System.Windows.Forms.DataGridView dtGridClientes;
     }
 }

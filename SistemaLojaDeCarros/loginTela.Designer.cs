@@ -118,6 +118,7 @@
             this.Controls.Add(this.txtBoxLogin);
             this.Controls.Add(this.senhaLabel);
             this.Controls.Add(this.loginLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "LoginTela";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
