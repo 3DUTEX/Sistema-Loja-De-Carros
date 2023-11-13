@@ -33,10 +33,10 @@
             this.lblSobrenomeCli = new System.Windows.Forms.Label();
             this.txtBoxSobrenomeCli = new System.Windows.Forms.TextBox();
             this.lblDtNascCli = new System.Windows.Forms.Label();
-            this.txtBoxDataNascCli = new System.Windows.Forms.TextBox();
             this.btnCadaCliente = new System.Windows.Forms.Button();
             this.btnTelaEndereco = new System.Windows.Forms.Button();
             this.lblTituloCliente = new System.Windows.Forms.Label();
+            this.maskTxtBoxDtNasc = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // txtBoxNomeCli
@@ -92,16 +92,6 @@
             this.lblDtNascCli.TabIndex = 5;
             this.lblDtNascCli.Text = "Data de Nascimento:";
             // 
-            // txtBoxDataNascCli
-            // 
-            this.txtBoxDataNascCli.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBoxDataNascCli.Enabled = false;
-            this.txtBoxDataNascCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxDataNascCli.Location = new System.Drawing.Point(292, 349);
-            this.txtBoxDataNascCli.Name = "txtBoxDataNascCli";
-            this.txtBoxDataNascCli.Size = new System.Drawing.Size(209, 31);
-            this.txtBoxDataNascCli.TabIndex = 4;
-            // 
             // btnCadaCliente
             // 
             this.btnCadaCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -113,6 +103,7 @@
             this.btnCadaCliente.TabIndex = 12;
             this.btnCadaCliente.Text = "Cadastrar";
             this.btnCadaCliente.UseVisualStyleBackColor = true;
+            this.btnCadaCliente.Click += new System.EventHandler(this.btnCadaCliente_Click);
             // 
             // btnTelaEndereco
             // 
@@ -137,16 +128,28 @@
             this.lblTituloCliente.TabIndex = 14;
             this.lblTituloCliente.Text = "Insira as informações do cliente";
             // 
+            // maskTxtBoxDtNasc
+            // 
+            this.maskTxtBoxDtNasc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.maskTxtBoxDtNasc.Enabled = false;
+            this.maskTxtBoxDtNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskTxtBoxDtNasc.Location = new System.Drawing.Point(292, 349);
+            this.maskTxtBoxDtNasc.Mask = "00/00/0000";
+            this.maskTxtBoxDtNasc.Name = "maskTxtBoxDtNasc";
+            this.maskTxtBoxDtNasc.Size = new System.Drawing.Size(209, 31);
+            this.maskTxtBoxDtNasc.TabIndex = 16;
+            this.maskTxtBoxDtNasc.Click += new System.EventHandler(this.maskTxtBoxDtNasc_Click);
+            // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 646);
+            this.Controls.Add(this.maskTxtBoxDtNasc);
             this.Controls.Add(this.lblTituloCliente);
             this.Controls.Add(this.btnTelaEndereco);
             this.Controls.Add(this.btnCadaCliente);
             this.Controls.Add(this.lblDtNascCli);
-            this.Controls.Add(this.txtBoxDataNascCli);
             this.Controls.Add(this.lblSobrenomeCli);
             this.Controls.Add(this.txtBoxSobrenomeCli);
             this.Controls.Add(this.lblNomeCli);
@@ -165,9 +168,9 @@
         private System.Windows.Forms.Label lblSobrenomeCli;
         private System.Windows.Forms.TextBox txtBoxSobrenomeCli;
         private System.Windows.Forms.Label lblDtNascCli;
-        private System.Windows.Forms.TextBox txtBoxDataNascCli;
         private System.Windows.Forms.Button btnCadaCliente;
         private System.Windows.Forms.Button btnTelaEndereco;
         private System.Windows.Forms.Label lblTituloCliente;
+        private System.Windows.Forms.MaskedTextBox maskTxtBoxDtNasc;
     }
 }

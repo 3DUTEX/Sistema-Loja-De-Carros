@@ -140,6 +140,7 @@
             // 
             // panelInfoCliente
             // 
+            this.panelInfoCliente.CausesValidation = false;
             this.panelInfoCliente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelInfoCliente.Location = new System.Drawing.Point(200, 0);
             this.panelInfoCliente.Name = "panelInfoCliente";
