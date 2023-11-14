@@ -98,5 +98,10 @@ namespace SistemaLojaDeCarros
 
             dtGridClientes.DataSource = dt;
         }
+
+        private void dtGridClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

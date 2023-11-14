@@ -100,6 +100,7 @@
             this.dtGridClientes.Name = "dtGridClientes";
             this.dtGridClientes.Size = new System.Drawing.Size(641, 150);
             this.dtGridClientes.TabIndex = 9;
+            this.dtGridClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridClientes_CellDoubleClick);
             // 
             // txtPesqSobrenome
             // 

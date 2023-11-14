@@ -136,6 +136,12 @@
     <Compile Include="ConsultarVeiculo.Designer.cs">
       <DependentUpon>ConsultarVeiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetalhesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalhesCliente.Designer.cs">
+      <DependentUpon>DetalhesCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="EstilizacaoButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarVeiculo.resx">
       <DependentUpon>ConsultarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalhesCliente.resx">
+      <DependentUpon>DetalhesCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExcluirCliente.resx">
       <DependentUpon>ExcluirCliente.cs</DependentUpon>
