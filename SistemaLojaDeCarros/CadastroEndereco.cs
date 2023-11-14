@@ -8,7 +8,9 @@ namespace SistemaLojaDeCarros
     {
         Banco banco = new Banco();
 
-        public int cdgEnderecoCadastrado;
+        public string logradouro, num, complemento, bairro, cidade;
+
+        public bool enderecoPreenchido = false;
         public CadastroEndereco()
         {
             InitializeComponent();
@@ -20,27 +22,13 @@ namespace SistemaLojaDeCarros
             // Validando se os campos estão vazios
             if (validaForm())
             {
-                string strInsert = $"INSERT INTO ENDERECO(nm_logradouro, no_casa, ds_complemento, nm_bairro, nm_cidade) VALUES('{txtBoxLog.Text}', '{txtBoxNum.Text}'," +
-                    $"'{txtBoxComple.Text}', '{txtBoxBairro.Text}', '{txtBoxCidade.Text}');";
+                logradouro = txtBoxLog.Text;
+                num = txtBoxNum.Text;
+                complemento = txtBoxComple.Text;
+                bairro = txtBoxBairro.Text;
+                cidade = txtBoxCidade.Text;
+                enderecoPreenchido = true;
 
-                bool resultInsert = banco.ExecuteNonQuery(strInsert); // executa o insert
-
-                if(resultInsert) //Se o insert der certo exibe mensagem
-                {
-                    MessageBox.Show("Endereço cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
-                // Buscando o id onde foi cadastrado o endereco
-                using (MySqlDataReader reader = banco.select($"SELECT * FROM ENDERECO WHERE nm_logradouro = '{txtBoxLog.Text}' AND no_casa = '{txtBoxNum.Text}' AND nm_bairro = '{txtBoxBairro.Text}'"))
-                {
-                    while(reader.Read())
-                    {
-                        cdgEnderecoCadastrado = int.Parse(reader["cdg_endereco"].ToString()); // Colocando ID em uma variável
-                    }
-
-                    reader.Close();
-                    
-                }
                 this.Close();
             }
 
@@ -66,6 +54,12 @@ namespace SistemaLojaDeCarros
             if (txtBoxCidade.Text.Length == 0)
             {
                 Util.exibeErro("Cidade não pode estar vazio!");
+                return false;
+            }
+            bool resultParse = int.TryParse(txtBoxNum.Text, out int num);
+            if (!resultParse)
+            {
+                Util.exibeErro("O número da casa precisa ser um número!");
                 return false;
             }
 

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
 
 namespace SistemaLojaDeCarros
@@ -15,6 +9,8 @@ namespace SistemaLojaDeCarros
         Banco banco = new Banco();
 
         CadastroEndereco telaEndereco;
+
+        int cdgEnderecoCadastrado = 0;
         public CadastroCliente()
         {
             InitializeComponent();
@@ -31,17 +27,35 @@ namespace SistemaLojaDeCarros
 
         private void btnCadaCliente_Click(object sender, EventArgs e)
         {
-            // Valida campos
-            if (!validaCampos()) //  Se falso, retorne
-                return;
+            if (telaEndereco.enderecoPreenchido)
+            {
+                buscaCodigoEndereco(); // busca endereço para ver se já existe
+                if(cdgEnderecoCadastrado == 0)
+                {
+                    string strInsertEndereco = $"INSERT INTO ENDERECO(nm_logradouro, no_casa, ds_complemento, nm_bairro, nm_cidade) VALUES('{telaEndereco.logradouro}', '{telaEndereco.num}'," +
+                        $"'{telaEndereco.complemento}', '{telaEndereco.bairro}', '{telaEndereco.cidade}');";
+
+                    bool resultInsertEndereco = banco.ExecuteNonQuery(strInsertEndereco); // executa o insert
+
+                    if (!resultInsertEndereco)
+                    {
+                        Util.exibeErro("O cadastro do endereço deu errado, tente novamente!");
+                        return;
+                    }
+
+                    buscaCodigoEndereco(); // busca endereço depois de cadastrar
+                }
+            }
 
             int cdgUsuario = LoginTela.cdgUsuarioConectado;
-            int cdgEnderecoCli = telaEndereco.cdgEnderecoCadastrado;
-            if (cdgEnderecoCli != 0)
+            if (cdgEnderecoCadastrado != 0)
             {
-                string strInsert = $"INSERT INTO CLIENTE (nm_cliente, nm_sobrenome, dt_nasc, cdg_loginFunc, cdg_endereco) VALUES ('{txtBoxNomeCli.Text}', '{txtBoxSobrenomeCli.Text}', STR_TO_DATE('{maskTxtBoxDtNasc.Text}', '%d/%m/%Y'), {LoginTela.cdgUsuarioConectado}, {telaEndereco.cdgEnderecoCadastrado});";
+                // Valida campos
+                if (!validaCampos()) //  Se falso, retorne
+                    return;
+                string strInsert = $"INSERT INTO CLIENTE (nm_cliente, nm_sobrenome, dt_nasc, cdg_loginFunc, cdg_endereco) VALUES ('{txtBoxNomeCli.Text}', '{txtBoxSobrenomeCli.Text}', STR_TO_DATE('{maskTxtBoxDtNasc.Text}', '%d/%m/%Y'), {LoginTela.cdgUsuarioConectado}, {cdgEnderecoCadastrado});";
                 bool resultInsert = banco.ExecuteNonQuery(strInsert);
-                if(resultInsert)
+                if (resultInsert)
                 {
                     MessageBox.Show("Cliente cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     resetaForm();
@@ -49,7 +63,7 @@ namespace SistemaLojaDeCarros
                 else
                 {
                     Util.exibeErro("Ocorreu um erro, verifique os dados e tente novamente!");
-                    string strDelete = $"DELETE FROM ENDERECO WHERE cdg_endereco = {cdgEnderecoCli}"; // Apaga endereço criado caso o registro do cliente não seja concluído
+                    string strDelete = $"DELETE FROM ENDERECO WHERE cdg_endereco = {cdgEnderecoCadastrado}"; // Apaga endereço criado caso o registro do cliente não seja concluído
                     banco.ExecuteNonQuery(strDelete);
                     resetaForm();
                 }
@@ -64,7 +78,7 @@ namespace SistemaLojaDeCarros
 
         private bool validaCampos()
         {
-            if(txtBoxNomeCli.Text.Length == 0)
+            if (txtBoxNomeCli.Text.Length == 0)
             {
                 Util.exibeErro("O campo nome não pode estar vazio!");
                 return false;
@@ -74,14 +88,27 @@ namespace SistemaLojaDeCarros
                 Util.exibeErro("O campo sobrenome não pode estar vazio!");
                 return false;
             }
-            if(!maskTxtBoxDtNasc.MaskCompleted)
+            if (!maskTxtBoxDtNasc.MaskCompleted)
             {
                 Util.exibeErro("O campo data não pode estar vazio!");
                 return false;
             }
-            
+
 
             return true;
+        }
+
+        private void buscaCodigoEndereco()
+        {
+            // Buscando o id onde foi cadastrado o endereco
+            using (MySqlDataReader reader = banco.select($"SELECT * FROM ENDERECO WHERE nm_logradouro = '{telaEndereco.logradouro}' AND no_casa = '{telaEndereco.num}' AND nm_bairro = '{telaEndereco.bairro}'"))
+            {
+                while (reader.Read())
+                {
+                    cdgEnderecoCadastrado = int.Parse(reader["cdg_endereco"].ToString()); // Colocando ID em uma variável
+                }
+                reader.Close();
+            }
         }
 
         private void formEnabled(bool enabled)
@@ -108,10 +135,11 @@ namespace SistemaLojaDeCarros
         private void resetaForm()
         {
             // Reseta o formulário e o cdg do endereço
-            telaEndereco.cdgEnderecoCadastrado = 0;
+            cdgEnderecoCadastrado = 0;
             limpaDadosCli();
             formEnabled(false);
             btnTelaEndereco.Enabled = true;
+            telaEndereco = new CadastroEndereco();
         }
     }
 }
