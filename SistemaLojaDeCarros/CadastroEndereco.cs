@@ -50,22 +50,22 @@ namespace SistemaLojaDeCarros
         {
             if (txtBoxLog.Text.Length == 0)
             {
-                Geral.msgErro("Logradouro não pode estar vazio!");
+                Util.exibeErro("Logradouro não pode estar vazio!");
                 return false;
             }
             if (txtBoxNum.Text.Length == 0)
             {
-                Geral.msgErro("Número não pode estar vazio!");
+                Util.exibeErro("Número não pode estar vazio!");
                 return false;
             }
             if (txtBoxBairro.Text.Length == 0)
             {
-                Geral.msgErro("Bairro não pode estar vazio!");
+                Util.exibeErro("Bairro não pode estar vazio!");
                 return false;
             }
             if (txtBoxCidade.Text.Length == 0)
             {
-                Geral.msgErro("Cidade não pode estar vazio!");
+                Util.exibeErro("Cidade não pode estar vazio!");
                 return false;
             }
 

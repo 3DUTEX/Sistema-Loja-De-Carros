@@ -154,6 +154,7 @@
             this.Controls.Add(this.txtBoxSobrenomeCli);
             this.Controls.Add(this.lblNomeCli);
             this.Controls.Add(this.txtBoxNomeCli);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CadastroCliente";
             this.Text = "CadastroCliente";
             this.ResumeLayout(false);

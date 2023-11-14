@@ -109,6 +109,7 @@
             this.txtPesqSobrenome.Name = "txtPesqSobrenome";
             this.txtPesqSobrenome.Size = new System.Drawing.Size(175, 31);
             this.txtPesqSobrenome.TabIndex = 11;
+            this.txtPesqSobrenome.TextChanged += new System.EventHandler(this.txtPesqSobrenome_TextChanged);
             // 
             // label1
             // 
@@ -134,6 +135,7 @@
             this.Controls.Add(this.lblPesqName);
             this.Controls.Add(this.lblPesqId);
             this.Controls.Add(this.lblConsultarCli);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultarCliente";
             this.Text = "ConsultarCliente";
             ((System.ComponentModel.ISupportInitialize)(this.dtGridClientes)).EndInit();

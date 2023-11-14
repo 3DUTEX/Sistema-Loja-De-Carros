@@ -55,7 +55,7 @@ namespace SistemaLojaDeCarros
             }
             catch (Exception ex)
             {
-                Geral.msgErro(ex.Message);
+                Util.exibeErro(ex.Message);
                 return null;
             }
         }

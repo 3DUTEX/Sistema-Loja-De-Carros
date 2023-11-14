@@ -61,7 +61,7 @@
             this.panelCliente.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelCliente.Location = new System.Drawing.Point(0, 0);
             this.panelCliente.Name = "panelCliente";
-            this.panelCliente.Size = new System.Drawing.Size(200, 450);
+            this.panelCliente.Size = new System.Drawing.Size(200, 595);
             this.panelCliente.TabIndex = 4;
             // 
             // btnMenu
@@ -72,7 +72,7 @@
             this.btnMenu.FlatAppearance.BorderSize = 3;
             this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.Location = new System.Drawing.Point(0, 427);
+            this.btnMenu.Location = new System.Drawing.Point(0, 572);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(200, 23);
             this.btnMenu.TabIndex = 5;
@@ -144,14 +144,14 @@
             this.panelInfoCliente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelInfoCliente.Location = new System.Drawing.Point(200, 0);
             this.panelInfoCliente.Name = "panelInfoCliente";
-            this.panelInfoCliente.Size = new System.Drawing.Size(600, 450);
+            this.panelInfoCliente.Size = new System.Drawing.Size(816, 595);
             this.panelInfoCliente.TabIndex = 5;
             // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1016, 595);
             this.Controls.Add(this.panelInfoCliente);
             this.Controls.Add(this.panelCliente);
             this.Name = "Cliente";

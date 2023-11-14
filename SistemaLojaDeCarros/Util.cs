@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace SistemaLojaDeCarros
 {
-    public class Geral
+    public class Util
     {
-        public static void msgErro(string msg)
+        public static void exibeErro(string msg)
         {
             MessageBox.Show(msg, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }

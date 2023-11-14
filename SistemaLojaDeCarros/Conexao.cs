@@ -10,7 +10,7 @@ namespace SistemaLojaDeCarros
 {
     internal class Conexao
     {
-        MySqlConnection con = new MySqlConnection(@"Data Source=localhost;Initial Catalog=dbLojaDeCarros; User ID=root; Password=12345678");
+        MySqlConnection con = new MySqlConnection(@"Data Source=localhost;Initial Catalog=dbLojaDeCarros; User ID=root; Password=");
         public static string msg;
         public MySqlConnection MyConnectarBD()
         {

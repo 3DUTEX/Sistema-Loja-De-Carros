@@ -151,7 +151,7 @@
     <Compile Include="ExcluirVeiculo.Designer.cs">
       <DependentUpon>ExcluirVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Geral.cs" />
+    <Compile Include="Util.cs" />
     <Compile Include="LoginTela.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -48,15 +48,15 @@ namespace SistemaLojaDeCarros
                 }
                 else
                 {
-                    Geral.msgErro("Ocorreu um erro, verifique os dados e tente novamente!");
-                    string strDelete = $"DELETE FROM ENDERECO WHERE cdg_endereco = {cdgEnderecoCli}";
+                    Util.exibeErro("Ocorreu um erro, verifique os dados e tente novamente!");
+                    string strDelete = $"DELETE FROM ENDERECO WHERE cdg_endereco = {cdgEnderecoCli}"; // Apaga endereço criado caso o registro do cliente não seja concluído
                     banco.ExecuteNonQuery(strDelete);
                     resetaForm();
                 }
             }
             else
             {
-                Geral.msgErro("Cadastre o endereço primeiro!");
+                Util.exibeErro("Cadastre o endereço primeiro!");
                 formEnabled(false);
                 btnTelaEndereco.Enabled = true;
             }
@@ -66,12 +66,17 @@ namespace SistemaLojaDeCarros
         {
             if(txtBoxNomeCli.Text.Length == 0)
             {
-                Geral.msgErro("O campo nome não pode estar vazio!");
+                Util.exibeErro("O campo nome não pode estar vazio!");
                 return false;
             }
             if (txtBoxSobrenomeCli.Text.Length == 0)
             {
-                Geral.msgErro("O campo sobrenome não pode estar vazio!");
+                Util.exibeErro("O campo sobrenome não pode estar vazio!");
+                return false;
+            }
+            if(!maskTxtBoxDtNasc.MaskCompleted)
+            {
+                Util.exibeErro("O campo data não pode estar vazio!");
                 return false;
             }
             
