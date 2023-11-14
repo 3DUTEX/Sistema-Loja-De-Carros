@@ -47,4 +47,20 @@ CONSTRAINT FOREIGN KEY (cdg_loginFunc) REFERENCES loginFunc(cdg_loginFunc)
 INSERT INTO loginfunc (nm_usuario, no_senha)
 VALUES ('ADMIN', '123456');
 
+-- EXEC 5
+CREATE VIEW vw_dadosCli AS
+SELECT 
+	cliente.nm_cliente,
+    cliente.nm_sobrenome,
+    cliente.dt_nasc,
+    endereco.nm_logradouro,
+    endereco.no_casa,
+    endereco.nm_bairro,
+    endereco.nm_cidade,
+    loginfunc.nm_usuario
+FROM endereco INNER JOIN cliente
+ON endereco.cdg_endereco = cliente.cdg_endereco
+INNER JOIN loginFunc
+ON cliente.cdg_loginFunc = loginfunc.cdg_loginFunc;
+
 SELECT * FROM loginfunc;

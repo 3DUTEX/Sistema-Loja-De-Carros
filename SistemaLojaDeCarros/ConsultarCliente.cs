@@ -25,15 +25,42 @@ namespace SistemaLojaDeCarros
 
         private void txtPesqId_TextChanged(object sender, EventArgs e)
         {
+            bool idIsNum = int.TryParse(txtPesqId.Text, out int  id);
+            if (!idIsNum && txtPesqId.Text != "")
+            {
+                Util.exibeErro("id precisa ser um número.");
+                txtPesqId.Text = "";
+                return;
+            }
+                
+            if (txtPesqId.Text != "")
+            {
+                txtPesqName.Enabled = false;
+                txtPesqSobrenome.Enabled = false;
+            }
+            else
+            {
+                txtPesqName.Enabled = true;
+                txtPesqSobrenome.Enabled = true;
+            }
+                
             this.atualizaDataGrid();
         }
 
         private void txtPesqName_TextChanged(object sender, EventArgs e)
         {
+            if (txtPesqName.Text != "")
+                txtPesqId.Enabled = false;
+            else
+                txtPesqId.Enabled = true;
             this.atualizaDataGrid();
         }
         private void txtPesqSobrenome_TextChanged(object sender, EventArgs e)
         {
+            if (txtPesqSobrenome.Text != "")
+                txtPesqId.Enabled = false;
+            else
+                txtPesqId.Enabled = true;
             this.atualizaDataGrid();
         }
 
