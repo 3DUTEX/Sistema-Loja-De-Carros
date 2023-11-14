@@ -94,10 +94,15 @@
             // 
             // dtGridClientes
             // 
+            this.dtGridClientes.AllowUserToAddRows = false;
+            this.dtGridClientes.AllowUserToDeleteRows = false;
+            this.dtGridClientes.AllowUserToResizeColumns = false;
+            this.dtGridClientes.AllowUserToResizeRows = false;
             this.dtGridClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtGridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridClientes.Location = new System.Drawing.Point(186, 233);
             this.dtGridClientes.Name = "dtGridClientes";
+            this.dtGridClientes.ReadOnly = true;
             this.dtGridClientes.Size = new System.Drawing.Size(641, 150);
             this.dtGridClientes.TabIndex = 9;
             this.dtGridClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtGridClientes_CellDoubleClick);

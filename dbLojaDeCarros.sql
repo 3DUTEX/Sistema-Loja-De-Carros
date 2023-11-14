@@ -50,6 +50,7 @@ VALUES ('ADMIN', '123456');
 -- EXEC 5
 CREATE VIEW vw_dadosCli AS
 SELECT 
+	cliente.cdg_cliente,
 	cliente.nm_cliente,
     cliente.nm_sobrenome,
     cliente.dt_nasc,
@@ -63,4 +64,3 @@ ON endereco.cdg_endereco = cliente.cdg_endereco
 INNER JOIN loginFunc
 ON cliente.cdg_loginFunc = loginfunc.cdg_loginFunc;
 
-SELECT * FROM loginfunc;

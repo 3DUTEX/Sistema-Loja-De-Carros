@@ -16,7 +16,7 @@ namespace SistemaLojaDeCarros
         Banco banco = new Banco();  
         Conexao con =  new Conexao();
 
-
+        static public string cdgClienteClicado;
         public ConsultarCliente()
         {
             InitializeComponent();
@@ -101,7 +101,23 @@ namespace SistemaLojaDeCarros
 
         private void dtGridClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            try
+            {
+                
+                cdgClienteClicado = dtGridClientes.SelectedRows[0].Cells[0].Value.ToString();
+                if(cdgClienteClicado == "")
+                {
+                    Util.exibeErro("Selecione um cliente!");
+                    return;
+                }
+            }catch(Exception ex)
+            {
+                Util.exibeErro("Clique no espaço em branco ao lado da célula (com uma seta)!");
+                return;
+            }
+            
+            DetalhesCliente telaCliente = new DetalhesCliente();
+            telaCliente.Show();
         }
     }
 }
