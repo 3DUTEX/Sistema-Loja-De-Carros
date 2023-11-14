@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,30 @@ namespace SistemaLojaDeCarros
                 return false;
             }
             
+        }
+
+        public DataTable selectDataTable(string strCmd)
+        {
+            try
+            {
+                con.MyConnectarBD();
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = strCmd;
+
+                cmd.Connection = con.MyConnectarBD();
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                DataTable dt = new DataTable();
+                da.SelectCommand = cmd;
+                da.Fill(dt);
+                con.MyDesConnectionBD();
+
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                Geral.msgErro(ex.Message);
+                return null;
+            }
         }
     }
 }

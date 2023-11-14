@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(362, 219);
+            this.label1.Location = new System.Drawing.Point(450, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 13);
             this.label1.TabIndex = 1;
@@ -47,10 +47,10 @@
             // 
             this.lblConsultarCli.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblConsultarCli.AutoSize = true;
-            this.lblConsultarCli.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConsultarCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConsultarCli.Location = new System.Drawing.Point(299, 34);
             this.lblConsultarCli.Name = "lblConsultarCli";
-            this.lblConsultarCli.Size = new System.Drawing.Size(170, 22);
+            this.lblConsultarCli.Size = new System.Drawing.Size(158, 24);
             this.lblConsultarCli.TabIndex = 4;
             this.lblConsultarCli.Text = "Consultar Veículo";
             // 
@@ -58,10 +58,10 @@
             // 
             this.lblPesqId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPesqId.AutoSize = true;
-            this.lblPesqId.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesqId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPesqId.Location = new System.Drawing.Point(267, 144);
             this.lblPesqId.Name = "lblPesqId";
-            this.lblPesqId.Size = new System.Drawing.Size(143, 18);
+            this.lblPesqId.Size = new System.Drawing.Size(128, 20);
             this.lblPesqId.TabIndex = 5;
             this.lblPesqId.Text = "Pesquisar por Id:";
             // 
@@ -69,10 +69,10 @@
             // 
             this.lblPesqName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPesqName.AutoSize = true;
-            this.lblPesqName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesqName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPesqName.Location = new System.Drawing.Point(227, 215);
             this.lblPesqName.Name = "lblPesqName";
-            this.lblPesqName.Size = new System.Drawing.Size(172, 18);
+            this.lblPesqName.Size = new System.Drawing.Size(154, 20);
             this.lblPesqName.TabIndex = 6;
             this.lblPesqName.Text = "Pesquisar por nome:";
             // 
