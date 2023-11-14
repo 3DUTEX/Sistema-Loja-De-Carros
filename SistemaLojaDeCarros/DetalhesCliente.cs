@@ -13,9 +13,23 @@ namespace SistemaLojaDeCarros
 {
     public partial class DetalhesCliente : Form
     {
-        private string nome, sobrenome, logradouro, num, bairro, cidade, usuario;
+        private string nome, sobrenome, logradouro, num, bairro, cidade, usuario, dtNasc;
 
-        DateTime dtNasc;
+        private void txtBoxNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                nome = txtBoxNome.Text;
+                voltaLabel(txtBoxNome, lblNome, nome);
+            }
+        }
+        
+        private void voltaLabel(TextBox txtBox, Label lbl, string texto)
+        {
+            txtBox.Visible = false;
+            lbl.Visible = true;
+            lbl.Text = texto;
+        }
 
         Banco banco = new Banco();
         public DetalhesCliente()
@@ -30,7 +44,7 @@ namespace SistemaLojaDeCarros
                 {
                     nome = reader["nm_cliente"].ToString();
                     sobrenome = reader["nm_sobrenome"].ToString();
-                    dtNasc = DateTime.Parse(reader["dt_nasc"].ToString());
+                    dtNasc = (reader["dt_nasc"].ToString());
                     logradouro = reader["nm_logradouro"].ToString();
                     num = reader["no_casa"].ToString();
                     bairro = reader["nm_bairro"].ToString();
@@ -41,10 +55,27 @@ namespace SistemaLojaDeCarros
                 reader.Close();
             }
 
-            lblNome.Text = $"{nome} {sobrenome}";
-            lblDataNasc.Text = dtNasc.ToString();
-            lblEndereco.Text = $"{logradouro} {num} {bairro} {cidade}";
+            lblNome.Text = nome;
+            lblSobrenome.Text = sobrenome;
+            lblDataNasc.Text = dtNasc;
+            lblLogradouro.Text = logradouro;
+            lblNum.Text = num;
+            lblBairro.Text = bairro;
             lblCadaPor.Text = usuario;
+        }
+
+        private void lblNome_DoubleClick(object sender, EventArgs e)
+        {
+            ativaTxtBox(txtBoxNome, lblNome, nome);
+        }
+
+        private void ativaTxtBox(TextBox txtBox, Label lbl, string texto) 
+        {
+            lbl.Visible = false;
+            txtBox.Visible = true;
+            txtBox.Text = texto;
+            txtBox.Focus();
+
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
