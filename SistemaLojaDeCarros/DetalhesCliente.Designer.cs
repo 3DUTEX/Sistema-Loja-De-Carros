@@ -48,6 +48,7 @@
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
             this.txtBoxNome = new System.Windows.Forms.TextBox();
+            this.txtBoxSobren = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -98,7 +99,7 @@
             // 
             this.btnFechar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.Location = new System.Drawing.Point(592, 589);
+            this.btnFechar.Location = new System.Drawing.Point(603, 590);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(163, 52);
             this.btnFechar.TabIndex = 5;
@@ -163,6 +164,7 @@
             this.lblSobrenome.Size = new System.Drawing.Size(131, 25);
             this.lblSobrenome.TabIndex = 11;
             this.lblSobrenome.Text = "Sobrenome";
+            this.lblSobrenome.DoubleClick += new System.EventHandler(this.lblSobrenome_DoubleClick);
             // 
             // label6
             // 
@@ -245,7 +247,7 @@
             // 
             this.btnAtualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(294, 589);
+            this.btnAtualizar.Location = new System.Drawing.Point(312, 589);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(163, 52);
             this.btnAtualizar.TabIndex = 18;
@@ -274,11 +276,23 @@
             this.txtBoxNome.Visible = false;
             this.txtBoxNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNome_KeyPress);
             // 
+            // txtBoxSobren
+            // 
+            this.txtBoxSobren.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxSobren.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxSobren.Location = new System.Drawing.Point(388, 165);
+            this.txtBoxSobren.Name = "txtBoxSobren";
+            this.txtBoxSobren.Size = new System.Drawing.Size(125, 26);
+            this.txtBoxSobren.TabIndex = 21;
+            this.txtBoxSobren.Visible = false;
+            this.txtBoxSobren.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxSobren_KeyPress);
+            // 
             // DetalhesCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 653);
+            this.Controls.Add(this.txtBoxSobren);
             this.Controls.Add(this.txtBoxNome);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnAtualizar);
@@ -329,5 +343,6 @@
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.TextBox txtBoxNome;
+        private System.Windows.Forms.TextBox txtBoxSobren;
     }
 }

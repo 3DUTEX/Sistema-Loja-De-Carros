@@ -15,20 +15,25 @@ namespace SistemaLojaDeCarros
     {
         private string nome, sobrenome, logradouro, num, bairro, cidade, usuario, dtNasc;
 
+        private bool alterou = false;
+
+        private void lblSobrenome_DoubleClick(object sender, EventArgs e)
+        {
+            ativaTxtBox(txtBoxSobren, lblSobrenome, sobrenome);
+        }
+
+        private void txtBoxSobren_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            editaTxtBox(ref sobrenome, txtBoxSobren, lblSobrenome, e);
+        }
+        private void lblNome_DoubleClick(object sender, EventArgs e)
+        {
+            ativaTxtBox(txtBoxNome, lblNome, nome);
+        }
+
         private void txtBoxNome_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)13)
-            {
-                nome = txtBoxNome.Text;
-                voltaLabel(txtBoxNome, lblNome, nome);
-            }
-        }
-        
-        private void voltaLabel(TextBox txtBox, Label lbl, string texto)
-        {
-            txtBox.Visible = false;
-            lbl.Visible = true;
-            lbl.Text = texto;
+            editaTxtBox(ref nome, txtBoxNome, lblNome, e);
         }
 
         Banco banco = new Banco();
@@ -64,9 +69,25 @@ namespace SistemaLojaDeCarros
             lblCadaPor.Text = usuario;
         }
 
-        private void lblNome_DoubleClick(object sender, EventArgs e)
+        private void editaTxtBox(ref string var, TextBox txtBox, Label lbl, KeyPressEventArgs e)
         {
-            ativaTxtBox(txtBoxNome, lblNome, nome);
+            if (e.KeyChar == (char)13)
+            {
+
+                if (txtBox.Text != var) // Verifica se foi alterado
+                    alterou = true;
+
+                if (alterou) // Se alterou, coloca o novo valor na variável
+                    var = txtBox.Text;
+
+                voltaLabel(txtBox, lbl, var);
+            }
+        }
+        private void voltaLabel(TextBox txtBox, Label lbl, string var)
+        {
+            txtBox.Visible = false;
+            lbl.Visible = true;
+            lbl.Text = var;
         }
 
         private void ativaTxtBox(TextBox txtBox, Label lbl, string texto) 
