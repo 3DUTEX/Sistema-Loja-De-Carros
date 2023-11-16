@@ -42,6 +42,7 @@
             // txtBoxNomeCli
             // 
             this.txtBoxNomeCli.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxNomeCli.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxNomeCli.Enabled = false;
             this.txtBoxNomeCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNomeCli.Location = new System.Drawing.Point(292, 253);

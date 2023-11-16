@@ -243,3 +243,4 @@ C:\Users\2ds\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\Sistem
 C:\Users\2ds\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.exe
 C:\Users\2ds\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.pdb
 C:\Users\Edu\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.DetalhesCliente.resources
+C:\Users\2ds\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.DetalhesCliente.resources

@@ -19,9 +19,10 @@ namespace SistemaLojaDeCarros
 
         public EstilizacaoButton()
         {
+            this.borderRadius = 30;
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
-            this.BackColor = Color.LightGray;
+            this.BackColor = Color.Blue;
         }
 
         private GraphicsPath GetFigurinePath(RectangleF retangle, float radius)
@@ -36,25 +37,38 @@ namespace SistemaLojaDeCarros
 
             return path;
         }
-        //protected override void onPaint(PaintEventArgs paint)
-        //{
-        //    base.OnPaint(paint);
-        //    paint.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+        protected void onPaint(PaintEventArgs paint)
+        {
+            base.OnPaint(paint);
+            paint.Graphics.SmoothingMode = SmoothingMode.HighQuality;
 
-        //    RectangleF rectSurface = new RectangleF(0, 0, this.Width, this.Height);
-        //    RectangleF rectBorder = new RectangleF(1, 1, this.Width-0.8F, this.Height-1);
+            RectangleF rectSurface = new RectangleF(0, 0, this.Width, this.Height);
+            RectangleF rectBorder = new RectangleF(1, 1, this.Width - 0.8F, this.Height - 1);
 
-        //    if(borderRadius > 2) //Botão com borderradius
-        //    {
-        //        using (GraphicsPath pathSurface = GetFigurinePath(rectSurface, borderRadius))
-        //        using (GraphicsPath pathBorder = GetFigurinePath(rectBorder, borderRadius-1F))
-        //        using (Pen penSurface = new Pen(this.Parent.BackColor, 2))
-        //        using (Pen penBorder = new Pen(borderColor, borderSize))
-        //        {
-        //            penBorder.Alignment = PenAlignment.Inset;
-        //            this.Region = new Region(pathSurface);
-        //        }
-        //    }
-        //}
+            if (borderRadius > 2) //Botão com borderradius
+            {
+                using (GraphicsPath pathSurface = GetFigurinePath(rectSurface, borderRadius))
+                using (GraphicsPath pathBorder = GetFigurinePath(rectBorder, borderRadius - 1F))
+                using (Pen penSurface = new Pen(this.Parent.BackColor, 2))
+                using (Pen penBorder = new Pen(borderColor, borderSize))
+                {
+                    penBorder.Alignment = PenAlignment.Inset;
+                    this.Region = new Region(pathSurface);
+                    //Desenhando a borda da interface em HD
+                    paint.Graphics.DrawPath(penSurface, pathSurface);                  
+                }
+            }
+        }
+        protected void onHandleCreated(EventArgs e)
+        {
+            base.OnHandleCreated(e);
+            this.Parent.BackColorChanged += new EventHandler(Container_BackColorChanged);
+        }
+
+        private void Container_BackColorChanged(object sender, EventArgs e)
+        {
+            if(this.DesignMode)
+                this.Invalidate();
+        }
     }
 }

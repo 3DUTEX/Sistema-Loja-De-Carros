@@ -40,6 +40,7 @@
             this.lblNumLog = new System.Windows.Forms.Label();
             this.txtBoxNum = new System.Windows.Forms.TextBox();
             this.btnEnderecoCada = new System.Windows.Forms.Button();
+            this.estilizacaoButton1 = new SistemaLojaDeCarros.EstilizacaoButton();
             this.SuspendLayout();
             // 
             // txtBoxLog
@@ -165,11 +166,24 @@
             this.btnEnderecoCada.UseVisualStyleBackColor = true;
             this.btnEnderecoCada.Click += new System.EventHandler(this.btnEnderecoCada_Click);
             // 
+            // estilizacaoButton1
+            // 
+            this.estilizacaoButton1.BackColor = System.Drawing.Color.LightGray;
+            this.estilizacaoButton1.FlatAppearance.BorderSize = 0;
+            this.estilizacaoButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.estilizacaoButton1.Location = new System.Drawing.Point(726, 316);
+            this.estilizacaoButton1.Name = "estilizacaoButton1";
+            this.estilizacaoButton1.Size = new System.Drawing.Size(75, 23);
+            this.estilizacaoButton1.TabIndex = 13;
+            this.estilizacaoButton1.Text = "estilizacaoButton1";
+            this.estilizacaoButton1.UseVisualStyleBackColor = false;
+            // 
             // CadastroEndereco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 578);
+            this.Controls.Add(this.estilizacaoButton1);
             this.Controls.Add(this.btnEnderecoCada);
             this.Controls.Add(this.lblNumLog);
             this.Controls.Add(this.txtBoxNum);
@@ -204,5 +218,6 @@
         private System.Windows.Forms.Label lblNumLog;
         private System.Windows.Forms.TextBox txtBoxNum;
         private System.Windows.Forms.Button btnEnderecoCada;
+        private EstilizacaoButton estilizacaoButton1;
     }
 }

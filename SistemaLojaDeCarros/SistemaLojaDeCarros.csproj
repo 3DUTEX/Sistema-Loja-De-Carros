@@ -219,6 +219,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Veiculo.resx">
       <DependentUpon>Veiculo.cs</DependentUpon>
@@ -236,6 +237,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-resize-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-resize-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window-90.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
