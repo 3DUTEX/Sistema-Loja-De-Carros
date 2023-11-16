@@ -49,6 +49,14 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.txtBoxNome = new System.Windows.Forms.TextBox();
             this.txtBoxSobren = new System.Windows.Forms.TextBox();
+            this.maskTxtDtNasc = new System.Windows.Forms.MaskedTextBox();
+            this.txtBoxLog = new System.Windows.Forms.TextBox();
+            this.txtBoxNum = new System.Windows.Forms.TextBox();
+            this.txtBoxBairro = new System.Windows.Forms.TextBox();
+            this.txtBoxCidade = new System.Windows.Forms.TextBox();
+            this.txtBoxComple = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblComplemento = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -78,7 +86,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(201, 348);
+            this.label4.Location = new System.Drawing.Point(204, 386);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(175, 25);
             this.label4.TabIndex = 3;
@@ -129,18 +137,20 @@
             this.lblDataNasc.Size = new System.Drawing.Size(130, 25);
             this.lblDataNasc.TabIndex = 7;
             this.lblDataNasc.Text = "00/00/0000";
+            this.lblDataNasc.DoubleClick += new System.EventHandler(this.lblDataNasc_DoubleClick);
             // 
             // lblNum
             // 
             this.lblNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNum.AutoSize = true;
             this.lblNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum.Location = new System.Drawing.Point(382, 348);
+            this.lblNum.Location = new System.Drawing.Point(385, 386);
             this.lblNum.MaximumSize = new System.Drawing.Size(400, 50);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(59, 25);
             this.lblNum.TabIndex = 8;
             this.lblNum.Text = "Num";
+            this.lblNum.DoubleClick += new System.EventHandler(this.lblNum_DoubleClick);
             // 
             // lblCadaPor
             // 
@@ -182,18 +192,19 @@
             this.lblLogradouro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLogradouro.AutoSize = true;
             this.lblLogradouro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogradouro.Location = new System.Drawing.Point(380, 307);
+            this.lblLogradouro.Location = new System.Drawing.Point(383, 291);
             this.lblLogradouro.Name = "lblLogradouro";
             this.lblLogradouro.Size = new System.Drawing.Size(132, 25);
             this.lblLogradouro.TabIndex = 13;
             this.lblLogradouro.Text = "Logradouro";
+            this.lblLogradouro.DoubleClick += new System.EventHandler(this.lblLogradouro_DoubleClick);
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(246, 307);
+            this.label7.Location = new System.Drawing.Point(249, 291);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 25);
             this.label7.TabIndex = 12;
@@ -204,18 +215,19 @@
             this.lblBairro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.Location = new System.Drawing.Point(379, 389);
+            this.lblBairro.Location = new System.Drawing.Point(382, 427);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(75, 25);
             this.lblBairro.TabIndex = 15;
             this.lblBairro.Text = "Bairro";
+            this.lblBairro.DoubleClick += new System.EventHandler(this.lblBairro_DoubleClick);
             // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(298, 389);
+            this.label8.Location = new System.Drawing.Point(301, 427);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(75, 25);
             this.label8.TabIndex = 14;
@@ -226,18 +238,19 @@
             this.lblCidade.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.Location = new System.Drawing.Point(379, 434);
+            this.lblCidade.Location = new System.Drawing.Point(382, 472);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(86, 25);
             this.lblCidade.TabIndex = 17;
             this.lblCidade.Text = "Cidade";
+            this.lblCidade.DoubleClick += new System.EventHandler(this.lblCidade_DoubleClick);
             // 
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(289, 434);
+            this.label9.Location = new System.Drawing.Point(292, 472);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 25);
             this.label9.TabIndex = 16;
@@ -253,6 +266,7 @@
             this.btnAtualizar.TabIndex = 18;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnApagar
             // 
@@ -264,6 +278,7 @@
             this.btnApagar.TabIndex = 19;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // txtBoxNome
             // 
@@ -271,7 +286,7 @@
             this.txtBoxNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNome.Location = new System.Drawing.Point(387, 126);
             this.txtBoxNome.Name = "txtBoxNome";
-            this.txtBoxNome.Size = new System.Drawing.Size(125, 26);
+            this.txtBoxNome.Size = new System.Drawing.Size(124, 26);
             this.txtBoxNome.TabIndex = 20;
             this.txtBoxNome.Visible = false;
             this.txtBoxNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNome_KeyPress);
@@ -282,16 +297,113 @@
             this.txtBoxSobren.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxSobren.Location = new System.Drawing.Point(388, 165);
             this.txtBoxSobren.Name = "txtBoxSobren";
-            this.txtBoxSobren.Size = new System.Drawing.Size(125, 26);
+            this.txtBoxSobren.Size = new System.Drawing.Size(123, 26);
             this.txtBoxSobren.TabIndex = 21;
             this.txtBoxSobren.Visible = false;
             this.txtBoxSobren.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxSobren_KeyPress);
+            // 
+            // maskTxtDtNasc
+            // 
+            this.maskTxtDtNasc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.maskTxtDtNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskTxtDtNasc.Location = new System.Drawing.Point(387, 198);
+            this.maskTxtDtNasc.Mask = "00/00/0000";
+            this.maskTxtDtNasc.Name = "maskTxtDtNasc";
+            this.maskTxtDtNasc.Size = new System.Drawing.Size(124, 26);
+            this.maskTxtDtNasc.TabIndex = 22;
+            this.maskTxtDtNasc.Visible = false;
+            this.maskTxtDtNasc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskTxtDtNasc_KeyPress);
+            // 
+            // txtBoxLog
+            // 
+            this.txtBoxLog.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxLog.Location = new System.Drawing.Point(389, 292);
+            this.txtBoxLog.Name = "txtBoxLog";
+            this.txtBoxLog.Size = new System.Drawing.Size(125, 26);
+            this.txtBoxLog.TabIndex = 23;
+            this.txtBoxLog.Visible = false;
+            this.txtBoxLog.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLog_KeyPress);
+            // 
+            // txtBoxNum
+            // 
+            this.txtBoxNum.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxNum.Location = new System.Drawing.Point(389, 387);
+            this.txtBoxNum.Name = "txtBoxNum";
+            this.txtBoxNum.Size = new System.Drawing.Size(125, 26);
+            this.txtBoxNum.TabIndex = 24;
+            this.txtBoxNum.Visible = false;
+            this.txtBoxNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNum_KeyPress);
+            // 
+            // txtBoxBairro
+            // 
+            this.txtBoxBairro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxBairro.Location = new System.Drawing.Point(388, 427);
+            this.txtBoxBairro.Name = "txtBoxBairro";
+            this.txtBoxBairro.Size = new System.Drawing.Size(125, 26);
+            this.txtBoxBairro.TabIndex = 25;
+            this.txtBoxBairro.Visible = false;
+            this.txtBoxBairro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBairro_KeyPress);
+            // 
+            // txtBoxCidade
+            // 
+            this.txtBoxCidade.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxCidade.Location = new System.Drawing.Point(388, 471);
+            this.txtBoxCidade.Name = "txtBoxCidade";
+            this.txtBoxCidade.Size = new System.Drawing.Size(125, 26);
+            this.txtBoxCidade.TabIndex = 26;
+            this.txtBoxCidade.Visible = false;
+            this.txtBoxCidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxCidade_KeyPress);
+            // 
+            // txtBoxComple
+            // 
+            this.txtBoxComple.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBoxComple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxComple.Location = new System.Drawing.Point(390, 338);
+            this.txtBoxComple.Name = "txtBoxComple";
+            this.txtBoxComple.Size = new System.Drawing.Size(125, 26);
+            this.txtBoxComple.TabIndex = 28;
+            this.txtBoxComple.Visible = false;
+            this.txtBoxComple.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxComple_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(226, 339);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 25);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Complemento:";
+            // 
+            // lblComplemento
+            // 
+            this.lblComplemento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblComplemento.AutoSize = true;
+            this.lblComplemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComplemento.Location = new System.Drawing.Point(384, 339);
+            this.lblComplemento.Name = "lblComplemento";
+            this.lblComplemento.Size = new System.Drawing.Size(155, 25);
+            this.lblComplemento.TabIndex = 29;
+            this.lblComplemento.Text = "Complemento";
+            this.lblComplemento.DoubleClick += new System.EventHandler(this.lblComplemento_DoubleClick);
             // 
             // DetalhesCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 653);
+            this.Controls.Add(this.txtBoxComple);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtBoxCidade);
+            this.Controls.Add(this.txtBoxBairro);
+            this.Controls.Add(this.txtBoxNum);
+            this.Controls.Add(this.txtBoxLog);
+            this.Controls.Add(this.maskTxtDtNasc);
             this.Controls.Add(this.txtBoxSobren);
             this.Controls.Add(this.txtBoxNome);
             this.Controls.Add(this.btnApagar);
@@ -313,6 +425,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblComplemento);
             this.Name = "DetalhesCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalhes do Cliente";
@@ -344,5 +457,13 @@
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.TextBox txtBoxNome;
         private System.Windows.Forms.TextBox txtBoxSobren;
+        private System.Windows.Forms.MaskedTextBox maskTxtDtNasc;
+        private System.Windows.Forms.TextBox txtBoxLog;
+        private System.Windows.Forms.TextBox txtBoxNum;
+        private System.Windows.Forms.TextBox txtBoxBairro;
+        private System.Windows.Forms.TextBox txtBoxCidade;
+        private System.Windows.Forms.TextBox txtBoxComple;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblComplemento;
     }
 }

@@ -27,13 +27,30 @@ namespace SistemaLojaDeCarros
                 MySqlCommand cmd = new MySqlCommand(strCmd, con.MyConnectarBD());
                 cmd.ExecuteNonQuery();
                 con.MyDesConnectionBD();
-                return true;
             }
             catch (Exception ex)
             {
                 return false;
             }
-            
+
+            return true;
+        }
+
+        public string ExecuteScalar(string strCmd)
+        {
+            string resultScalar = "";
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(strCmd, con.MyConnectarBD());
+                resultScalar = cmd.ExecuteScalar().ToString();
+                con.MyDesConnectionBD();
+            }
+            catch (Exception ex)
+            {
+                Util.exibeErro(ex.Message);
+            }
+
+            return resultScalar;
         }
 
         public DataTable selectDataTable(string strCmd)

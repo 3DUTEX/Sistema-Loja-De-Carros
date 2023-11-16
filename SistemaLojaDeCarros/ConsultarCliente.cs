@@ -103,7 +103,6 @@ namespace SistemaLojaDeCarros
         {
             try
             {
-                
                 cdgClienteClicado = dtGridClientes.SelectedRows[0].Cells[0].Value.ToString();
                 if(cdgClienteClicado == "")
                 {

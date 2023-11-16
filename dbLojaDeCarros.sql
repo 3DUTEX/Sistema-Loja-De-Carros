@@ -56,6 +56,7 @@ SELECT
     cliente.dt_nasc,
     endereco.nm_logradouro,
     endereco.no_casa,
+    endereco.ds_complemento,
     endereco.nm_bairro,
     endereco.nm_cidade,
     loginfunc.nm_usuario
@@ -63,4 +64,5 @@ FROM endereco INNER JOIN cliente
 ON endereco.cdg_endereco = cliente.cdg_endereco
 INNER JOIN loginFunc
 ON cliente.cdg_loginFunc = loginfunc.cdg_loginFunc;
+
 
