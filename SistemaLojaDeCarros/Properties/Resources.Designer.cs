@@ -103,9 +103,29 @@ namespace SistemaLojaDeCarros.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_saída_de_emergência_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-saída-de-emergência-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_90 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_voltar_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-voltar-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +146,16 @@ namespace SistemaLojaDeCarros.Properties {
         internal static System.Drawing.Bitmap icons8_x_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-x-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setinha {
+            get {
+                object obj = ResourceManager.GetObject("setinha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

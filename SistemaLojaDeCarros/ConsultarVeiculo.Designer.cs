@@ -85,6 +85,7 @@
             this.Controls.Add(this.lblPesqId);
             this.Controls.Add(this.lblConsultarCli);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultarVeiculo";
             this.Text = "ConsultarVeiculo";
             this.ResumeLayout(false);

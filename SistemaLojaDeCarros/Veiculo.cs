@@ -41,7 +41,7 @@ namespace SistemaLojaDeCarros
 
         private void btnExcluirVeiculo_Click(object sender, EventArgs e)
         {
-            carregarNovaJanela(new ExcluirVeiculo());
+            
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
