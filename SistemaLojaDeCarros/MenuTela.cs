@@ -17,6 +17,7 @@ namespace SistemaLojaDeCarros
         {
             InitializeComponent();
             sideMenu();
+            ajustaPosicao(panelSubCliente);
         }
     
         private void sideMenu()
@@ -49,13 +50,38 @@ namespace SistemaLojaDeCarros
         private void btCliente_Click(object sender, EventArgs e)
         {
             showSideMenu(panelSubCliente);
+            ajustaPosicao(panelSubCliente);
             trocaImagem(panelSubCliente, pictureSeta);
+        }
+
+        private void pictureSeta_Click(object sender, EventArgs e)
+        {
+            showSideMenu(panelSubCliente);
+            ajustaPosicao(panelSubCliente);
+            trocaImagem(panelSubCliente, pictureSeta);
+        }
+
+        private bool ajustaPosicao(Panel panel)
+        {
+            bool posicao = panel.Visible;
+            if (posicao)           
+                pictureSeta2.Location = new Point(168, 221);            
+            else            
+                pictureSeta2.Location = new Point(168, 140);
+            
+            return posicao;   
         }
 
         private void btVeiculo_Click(object sender, EventArgs e)
         {
             showSideMenu(panelSubVeiculo);       
             trocaImagem(panelSubVeiculo, pictureSeta2);      
+        }
+
+        private void pictureSeta2_Click(object sender, EventArgs e)
+        {
+            showSideMenu(panelSubVeiculo);
+            trocaImagem(panelSubVeiculo, pictureSeta2);
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -70,13 +96,7 @@ namespace SistemaLojaDeCarros
             DialogResult sair = MessageBox.Show("Tem certeza que deseja sair do programa?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (sair == DialogResult.Yes)
                 Application.Exit();
-        }
-
-        private void pictureSeta_Click(object sender, EventArgs e)
-        {
-            showSideMenu(panelSubCliente);
-            trocaImagem(panelSubCliente, pictureSeta);
-        }
+        }    
 
         private void trocaImagem(Panel panel, PictureBox pictureBox)
         {
@@ -117,5 +137,7 @@ namespace SistemaLojaDeCarros
         {
             carregarNovaJanela(new ConsultarVeiculo());
         }
+
+        
     }
 }

@@ -71,6 +71,7 @@
             // 
             // pictureBoxSair
             // 
+            this.pictureBoxSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxSair.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_saída_de_emergência_50;
             this.pictureBoxSair.Location = new System.Drawing.Point(166, 419);
             this.pictureBoxSair.Name = "pictureBoxSair";
@@ -82,6 +83,8 @@
             // 
             // pictureSeta2
             // 
+            this.pictureSeta2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureSeta2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureSeta2.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
             this.pictureSeta2.Location = new System.Drawing.Point(168, 221);
             this.pictureSeta2.Name = "pictureSeta2";
@@ -89,9 +92,12 @@
             this.pictureSeta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureSeta2.TabIndex = 7;
             this.pictureSeta2.TabStop = false;
+            this.pictureSeta2.Click += new System.EventHandler(this.pictureSeta2_Click);
             // 
             // pictureSeta
             // 
+            this.pictureSeta.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureSeta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureSeta.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
             this.pictureSeta.Location = new System.Drawing.Point(168, 99);
             this.pictureSeta.Name = "pictureSeta";
@@ -103,6 +109,7 @@
             // 
             // btSair
             // 
+            this.btSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSair.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btSair.FlatAppearance.BorderSize = 0;
             this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -131,6 +138,7 @@
             // 
             // btConsultarVeiculo
             // 
+            this.btConsultarVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btConsultarVeiculo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btConsultarVeiculo.FlatAppearance.BorderSize = 0;
             this.btConsultarVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -148,6 +156,7 @@
             // 
             // btCadastrarVeiculo
             // 
+            this.btCadastrarVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btCadastrarVeiculo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btCadastrarVeiculo.FlatAppearance.BorderSize = 0;
             this.btCadastrarVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -165,6 +174,7 @@
             // 
             // btVeiculo
             // 
+            this.btVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btVeiculo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btVeiculo.FlatAppearance.BorderSize = 0;
             this.btVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -193,6 +203,7 @@
             // 
             // btConsultarCliente
             // 
+            this.btConsultarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btConsultarCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btConsultarCliente.FlatAppearance.BorderSize = 0;
             this.btConsultarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -210,6 +221,7 @@
             // 
             // btCadastrarCli
             // 
+            this.btCadastrarCli.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btCadastrarCli.Dock = System.Windows.Forms.DockStyle.Top;
             this.btCadastrarCli.FlatAppearance.BorderSize = 0;
             this.btCadastrarCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -227,6 +239,7 @@
             // 
             // btCliente
             // 
+            this.btCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btCliente.FlatAppearance.BorderSize = 0;
             this.btCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

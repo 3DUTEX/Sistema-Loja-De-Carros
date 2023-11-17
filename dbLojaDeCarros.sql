@@ -65,4 +65,3 @@ ON endereco.cdg_endereco = cliente.cdg_endereco
 INNER JOIN loginFunc
 ON cliente.cdg_loginFunc = loginfunc.cdg_loginFunc;
 
-
