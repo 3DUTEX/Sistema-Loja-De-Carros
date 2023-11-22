@@ -16,35 +16,21 @@ namespace SistemaLojaDeCarros
         public MenuTela()
         {
             InitializeComponent();
-            sideMenu();
-            ajustaPosicao(panelSubCliente);
+            sideMenu();  //inicia com o menu escondido
+            ajustaPosicao(panelSubCliente); //metodo que ajusta a posição inicialmente do panel cliente
         }
     
-        private void sideMenu()
+        private void sideMenu() //escondendo menu
         {
             panelSubCliente.Visible = false;
             panelSubVeiculo.Visible = false;
         }
-        private void showSideMenu(Panel panel)
+        private void showSideMenu(Panel panel) //mostrando o menu
         {
             if (panel.Visible == false)
                 panel.Visible = true;
             else
                 panel.Visible = false;
-        }
-       
-        private void btnCliente_Click(object sender, EventArgs e)
-        {
-            Cliente cliente = new Cliente();
-            cliente.Show();
-            this.Hide();
-        }
-
-        private void btnVeiculo_Click(object sender, EventArgs e)
-        {
-            Veiculo veiculo = new Veiculo();
-            veiculo.Show();
-            this.Hide();
         }
 
         private void btCliente_Click(object sender, EventArgs e)
@@ -61,7 +47,7 @@ namespace SistemaLojaDeCarros
             trocaImagem(panelSubCliente, pictureSeta);
         }
 
-        private bool ajustaPosicao(Panel panel)
+        private bool ajustaPosicao(Panel panel) //método que ajusta a posição da seta no veiculo
         {
             bool posicao = panel.Visible;
             if (posicao)           
@@ -78,7 +64,7 @@ namespace SistemaLojaDeCarros
             trocaImagem(panelSubVeiculo, pictureSeta2);      
         }
 
-        private void pictureSeta2_Click(object sender, EventArgs e)
+        private void pictureSeta2_Click(object sender, EventArgs e) //método de click também pra picturebox
         {
             showSideMenu(panelSubVeiculo);
             trocaImagem(panelSubVeiculo, pictureSeta2);
@@ -98,7 +84,7 @@ namespace SistemaLojaDeCarros
                 Application.Exit();
         }    
 
-        private void trocaImagem(Panel panel, PictureBox pictureBox)
+        private void trocaImagem(Panel panel, PictureBox pictureBox) //método que troca a imagem do picture box, quando o painel está visível
         {
             if (panel.Visible == true)
                 pictureBox.Image = Resources.setinha;

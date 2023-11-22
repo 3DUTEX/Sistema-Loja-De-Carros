@@ -40,9 +40,10 @@
             this.lblDescricao = new System.Windows.Forms.Label();
             this.txtBoxDescricao = new System.Windows.Forms.TextBox();
             this.lblImagem = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxVeiculo = new System.Windows.Forms.PictureBox();
             this.btnInserirVeiculo = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnBrowseImg = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVeiculo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTituloVeiculo
@@ -177,30 +178,43 @@
             this.lblImagem.TabIndex = 26;
             this.lblImagem.Text = "Imagem:";
             // 
-            // pictureBox1
+            // pictureBoxVeiculo
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(280, 404);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 144);
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxVeiculo.Location = new System.Drawing.Point(280, 404);
+            this.pictureBoxVeiculo.Name = "pictureBoxVeiculo";
+            this.pictureBoxVeiculo.Size = new System.Drawing.Size(209, 144);
+            this.pictureBoxVeiculo.TabIndex = 27;
+            this.pictureBoxVeiculo.TabStop = false;
             // 
             // btnInserirVeiculo
             // 
-            this.btnInserirVeiculo.Location = new System.Drawing.Point(291, 572);
+            this.btnInserirVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserirVeiculo.Location = new System.Drawing.Point(231, 574);
             this.btnInserirVeiculo.Name = "btnInserirVeiculo";
-            this.btnInserirVeiculo.Size = new System.Drawing.Size(75, 23);
+            this.btnInserirVeiculo.Size = new System.Drawing.Size(207, 60);
             this.btnInserirVeiculo.TabIndex = 28;
             this.btnInserirVeiculo.Text = "Inserir";
             this.btnInserirVeiculo.UseVisualStyleBackColor = true;
+            this.btnInserirVeiculo.Click += new System.EventHandler(this.btnInserirVeiculo_Click);
+            // 
+            // btnBrowseImg
+            // 
+            this.btnBrowseImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowseImg.Location = new System.Drawing.Point(495, 520);
+            this.btnBrowseImg.Name = "btnBrowseImg";
+            this.btnBrowseImg.Size = new System.Drawing.Size(96, 28);
+            this.btnBrowseImg.TabIndex = 29;
+            this.btnBrowseImg.Text = "Procurar...";
+            this.btnBrowseImg.UseVisualStyleBackColor = true;
             // 
             // CadastroVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 646);
+            this.Controls.Add(this.btnBrowseImg);
             this.Controls.Add(this.btnInserirVeiculo);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxVeiculo);
             this.Controls.Add(this.lblImagem);
             this.Controls.Add(this.txtBoxDescricao);
             this.Controls.Add(this.lblDescricao);
@@ -216,7 +230,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CadastroVeiculo";
             this.Text = "CadastroVeiculo";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVeiculo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,7 +249,8 @@
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.TextBox txtBoxDescricao;
         private System.Windows.Forms.Label lblImagem;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxVeiculo;
         private System.Windows.Forms.Button btnInserirVeiculo;
+        private System.Windows.Forms.Button btnBrowseImg;
     }
 }
