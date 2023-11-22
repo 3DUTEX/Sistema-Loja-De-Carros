@@ -206,6 +206,7 @@
             this.btnBrowseImg.TabIndex = 29;
             this.btnBrowseImg.Text = "Procurar...";
             this.btnBrowseImg.UseVisualStyleBackColor = true;
+            this.btnBrowseImg.Click += new System.EventHandler(this.btnBrowseImg_Click);
             // 
             // CadastroVeiculo
             // 

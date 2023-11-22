@@ -69,6 +69,7 @@
             this.txtPesqId.Name = "txtPesqId";
             this.txtPesqId.Size = new System.Drawing.Size(47, 31);
             this.txtPesqId.TabIndex = 9;
+            this.txtPesqId.TextChanged += new System.EventHandler(this.txtPesqId_TextChanged);
             // 
             // lblPesqModelo
             // 
@@ -109,6 +110,7 @@
             this.txtPesqPlaca.Name = "txtPesqPlaca";
             this.txtPesqPlaca.Size = new System.Drawing.Size(175, 31);
             this.txtPesqPlaca.TabIndex = 13;
+            this.txtPesqPlaca.TextChanged += new System.EventHandler(this.txtPesqPlaca_TextChanged);
             // 
             // dtGridVeiculos
             // 

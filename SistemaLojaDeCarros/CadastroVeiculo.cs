@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,17 +59,23 @@ namespace SistemaLojaDeCarros
         {
             validaCampos();
 
-            string strInsertVeiculo = $"INSERT INTO VEICULO(nm_modelo, nm_fabricante, nm_placa, nm_cor, ds_veiculo, imagem) VALUES('{txtBoxModelo}','{txtBoxFabricante}'" +
-                $"'{txtBoxPlaca}', '{txtBoxCor}', '{txtBoxDescricao}', '{pictureBoxVeiculo}'";
-            bool insertVeiculo = banco.ExecuteNonQuery(strInsertVeiculo);
-
-            if (insertVeiculo)
+            using (MemoryStream ms = new MemoryStream())
             {
-                MessageBox.Show("Veículo cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                limpaForm();
+                pictureBoxVeiculo.Image.Save(ms, pictureBoxVeiculo.Image.RawFormat);
+                byte[] imagem = ms.ToArray();
+
+                string strInsertVeiculo = $"INSERT INTO VEICULO(nm_modelo, nm_fabricante, nm_placa, nm_cor, ds_veiculo, imagem) VALUES('{txtBoxModelo.Text}','{txtBoxFabricante.Text}'" +
+                    $"'{txtBoxPlaca.Text}', '{txtBoxCor.Text}', '{txtBoxDescricao.Text}', @imagem)";
+                bool insertVeiculo = banco.ExecuteNonQuery(strInsertVeiculo);
+
+                if (insertVeiculo)
+                {
+                    MessageBox.Show("Veículo cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    limpaForm();
+                }
+                else
+                    Util.exibeErro("Ocorreu um erro, verifique os dados e tente novamente!");
             }
-            else
-                Util.exibeErro("Ocorreu um erro, verifique os dados e tente novamente!");
         }
 
         private void limpaForm()
@@ -79,6 +86,15 @@ namespace SistemaLojaDeCarros
             txtBoxDescricao.Text = "";
             txtBoxCor.Text = "";
             pictureBoxVeiculo.Image = null;
+        }
+
+        private void btnBrowseImg_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Escolha a imagem(*.jpg; *.png)|*.jpg; *.png";
+
+            if(ofd.ShowDialog() == DialogResult.OK)
+                pictureBoxVeiculo.Image = Image.FromFile(ofd.FileName);
         }
     }
 }
