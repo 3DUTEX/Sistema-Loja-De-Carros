@@ -145,6 +145,12 @@
     <Compile Include="EstilizacaoButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Util.cs" />
     <Compile Include="LoginTela.cs">
       <SubType>Form</SubType>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DetalhesCliente.resx">
       <DependentUpon>DetalhesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginTela.resx">
       <DependentUpon>LoginTela.cs</DependentUpon>
@@ -249,6 +258,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-saída-de-emergência-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoblack-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

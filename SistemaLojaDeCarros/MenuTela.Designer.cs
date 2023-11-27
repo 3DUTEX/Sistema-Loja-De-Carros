@@ -33,6 +33,9 @@
             this.pictureSeta2 = new System.Windows.Forms.PictureBox();
             this.pictureSeta = new System.Windows.Forms.PictureBox();
             this.btSair = new System.Windows.Forms.Button();
+            this.panelExibir = new System.Windows.Forms.Panel();
+            this.btInicio = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelSubVeiculo = new System.Windows.Forms.Panel();
             this.btConsultarVeiculo = new System.Windows.Forms.Button();
             this.btCadastrarVeiculo = new System.Windows.Forms.Button();
@@ -41,8 +44,6 @@
             this.btConsultarCliente = new System.Windows.Forms.Button();
             this.btCadastrarCli = new System.Windows.Forms.Button();
             this.btCliente = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelExibir = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSeta2)).BeginInit();
@@ -54,14 +55,15 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panelMenu.Controls.Add(this.pictureBoxSair);
-            this.panelMenu.Controls.Add(this.pictureSeta2);
             this.panelMenu.Controls.Add(this.pictureSeta);
-            this.panelMenu.Controls.Add(this.btSair);
             this.panelMenu.Controls.Add(this.panelSubVeiculo);
+            this.panelMenu.Controls.Add(this.pictureSeta2);
             this.panelMenu.Controls.Add(this.btVeiculo);
             this.panelMenu.Controls.Add(this.panelSubCliente);
             this.panelMenu.Controls.Add(this.btCliente);
+            this.panelMenu.Controls.Add(this.btInicio);
+            this.panelMenu.Controls.Add(this.pictureBoxSair);
+            this.panelMenu.Controls.Add(this.btSair);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -86,7 +88,7 @@
             this.pictureSeta2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureSeta2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureSeta2.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
-            this.pictureSeta2.Location = new System.Drawing.Point(168, 221);
+            this.pictureSeta2.Location = new System.Drawing.Point(168, 140);
             this.pictureSeta2.Name = "pictureSeta2";
             this.pictureSeta2.Size = new System.Drawing.Size(17, 16);
             this.pictureSeta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -99,7 +101,7 @@
             this.pictureSeta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureSeta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureSeta.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
-            this.pictureSeta.Location = new System.Drawing.Point(168, 99);
+            this.pictureSeta.Location = new System.Drawing.Point(168, 261);
             this.pictureSeta.Name = "pictureSeta";
             this.pictureSeta.Size = new System.Drawing.Size(17, 16);
             this.pictureSeta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,16 +127,51 @@
             this.btSair.UseVisualStyleBackColor = true;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
+            // panelExibir
+            // 
+            this.panelExibir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelExibir.Location = new System.Drawing.Point(200, 0);
+            this.panelExibir.Name = "panelExibir";
+            this.panelExibir.Size = new System.Drawing.Size(600, 450);
+            this.panelExibir.TabIndex = 7;
+            this.panelExibir.Paint += new System.Windows.Forms.PaintEventHandler(this.panelExibir_Paint);
+            // 
+            // btInicio
+            // 
+            this.btInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btInicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btInicio.FlatAppearance.BorderSize = 0;
+            this.btInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInicio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicio.ForeColor = System.Drawing.Color.White;
+            this.btInicio.Location = new System.Drawing.Point(0, 87);
+            this.btInicio.Name = "btInicio";
+            this.btInicio.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btInicio.Size = new System.Drawing.Size(200, 40);
+            this.btInicio.TabIndex = 10;
+            this.btInicio.Text = "Inicio";
+            this.btInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btInicio.UseVisualStyleBackColor = false;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(200, 87);
+            this.panelLogo.TabIndex = 0;
+            // 
             // panelSubVeiculo
             // 
             this.panelSubVeiculo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.panelSubVeiculo.Controls.Add(this.btConsultarVeiculo);
             this.panelSubVeiculo.Controls.Add(this.btCadastrarVeiculo);
             this.panelSubVeiculo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubVeiculo.Location = new System.Drawing.Point(0, 248);
+            this.panelSubVeiculo.Location = new System.Drawing.Point(0, 288);
             this.panelSubVeiculo.Name = "panelSubVeiculo";
             this.panelSubVeiculo.Size = new System.Drawing.Size(200, 81);
-            this.panelSubVeiculo.TabIndex = 4;
+            this.panelSubVeiculo.TabIndex = 14;
             // 
             // btConsultarVeiculo
             // 
@@ -152,7 +189,6 @@
             this.btConsultarVeiculo.Text = "Consultar Veículo";
             this.btConsultarVeiculo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btConsultarVeiculo.UseVisualStyleBackColor = true;
-            this.btConsultarVeiculo.Click += new System.EventHandler(this.btConsultarVeiculo_Click);
             // 
             // btCadastrarVeiculo
             // 
@@ -170,7 +206,6 @@
             this.btCadastrarVeiculo.Text = "Cadastrar Veículo";
             this.btCadastrarVeiculo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCadastrarVeiculo.UseVisualStyleBackColor = true;
-            this.btCadastrarVeiculo.Click += new System.EventHandler(this.btCadastrarVeiculo_Click);
             // 
             // btVeiculo
             // 
@@ -180,15 +215,14 @@
             this.btVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVeiculo.ForeColor = System.Drawing.Color.White;
-            this.btVeiculo.Location = new System.Drawing.Point(0, 208);
+            this.btVeiculo.Location = new System.Drawing.Point(0, 248);
             this.btVeiculo.Name = "btVeiculo";
             this.btVeiculo.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.btVeiculo.Size = new System.Drawing.Size(200, 40);
-            this.btVeiculo.TabIndex = 3;
+            this.btVeiculo.TabIndex = 13;
             this.btVeiculo.Text = "Veículo";
             this.btVeiculo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btVeiculo.UseVisualStyleBackColor = true;
-            this.btVeiculo.Click += new System.EventHandler(this.btVeiculo_Click);
             // 
             // panelSubCliente
             // 
@@ -196,10 +230,10 @@
             this.panelSubCliente.Controls.Add(this.btConsultarCliente);
             this.panelSubCliente.Controls.Add(this.btCadastrarCli);
             this.panelSubCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubCliente.Location = new System.Drawing.Point(0, 127);
+            this.panelSubCliente.Location = new System.Drawing.Point(0, 167);
             this.panelSubCliente.Name = "panelSubCliente";
             this.panelSubCliente.Size = new System.Drawing.Size(200, 81);
-            this.panelSubCliente.TabIndex = 2;
+            this.panelSubCliente.TabIndex = 12;
             // 
             // btConsultarCliente
             // 
@@ -217,7 +251,6 @@
             this.btConsultarCliente.Text = "Consultar Cliente";
             this.btConsultarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btConsultarCliente.UseVisualStyleBackColor = true;
-            this.btConsultarCliente.Click += new System.EventHandler(this.btConsultarCliente_Click);
             // 
             // btCadastrarCli
             // 
@@ -235,7 +268,6 @@
             this.btCadastrarCli.Text = "Cadastrar Cliente";
             this.btCadastrarCli.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCadastrarCli.UseVisualStyleBackColor = true;
-            this.btCadastrarCli.Click += new System.EventHandler(this.btCadastrarCli_Click);
             // 
             // btCliente
             // 
@@ -245,31 +277,14 @@
             this.btCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCliente.ForeColor = System.Drawing.Color.White;
-            this.btCliente.Location = new System.Drawing.Point(0, 87);
+            this.btCliente.Location = new System.Drawing.Point(0, 127);
             this.btCliente.Name = "btCliente";
             this.btCliente.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.btCliente.Size = new System.Drawing.Size(200, 40);
-            this.btCliente.TabIndex = 1;
+            this.btCliente.TabIndex = 11;
             this.btCliente.Text = "Cliente";
             this.btCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCliente.UseVisualStyleBackColor = true;
-            this.btCliente.Click += new System.EventHandler(this.btCliente_Click);
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(200, 87);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // panelExibir
-            // 
-            this.panelExibir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelExibir.Location = new System.Drawing.Point(200, 0);
-            this.panelExibir.Name = "panelExibir";
-            this.panelExibir.Size = new System.Drawing.Size(600, 450);
-            this.panelExibir.TabIndex = 7;
             // 
             // MenuTela
             // 
@@ -293,19 +308,20 @@
 
         #endregion
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Panel panelSubCliente;
-        private System.Windows.Forms.Button btCadastrarCli;
-        private System.Windows.Forms.Button btCliente;
-        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button btSair;
-        private System.Windows.Forms.Panel panelSubVeiculo;
-        private System.Windows.Forms.Button btCadastrarVeiculo;
-        private System.Windows.Forms.Button btVeiculo;
-        private System.Windows.Forms.Button btConsultarCliente;
-        private System.Windows.Forms.Button btConsultarVeiculo;
         private System.Windows.Forms.PictureBox pictureSeta;
         private System.Windows.Forms.PictureBox pictureSeta2;
         private System.Windows.Forms.PictureBox pictureBoxSair;
         private System.Windows.Forms.Panel panelExibir;
+        private System.Windows.Forms.Button btInicio;
+        private System.Windows.Forms.Panel panelSubVeiculo;
+        private System.Windows.Forms.Button btConsultarVeiculo;
+        private System.Windows.Forms.Button btCadastrarVeiculo;
+        private System.Windows.Forms.Button btVeiculo;
+        private System.Windows.Forms.Panel panelSubCliente;
+        private System.Windows.Forms.Button btConsultarCliente;
+        private System.Windows.Forms.Button btCadastrarCli;
+        private System.Windows.Forms.Button btCliente;
+        private System.Windows.Forms.Panel panelLogo;
     }
 }
