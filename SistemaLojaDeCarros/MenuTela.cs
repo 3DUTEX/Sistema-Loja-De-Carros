@@ -52,7 +52,7 @@ namespace SistemaLojaDeCarros
         {
             bool posicao = panel.Visible;
             if (posicao)           
-                pictureSeta2.Location = new Point(168, 261);            
+                pictureSeta2.Location = new Point(168, 283);            
             else            
                 pictureSeta2.Location = new Point(168, 12);
             
@@ -125,9 +125,19 @@ namespace SistemaLojaDeCarros
             carregarNovaJanela(new ConsultarVeiculo());
         }
 
-        private void panelExibir_Paint(object sender, PaintEventArgs e)
+        private void btInicio_Click(object sender, EventArgs e)
         {
+            carregarNovaJanela(new Home());
+        }
 
+        private void pictureLogo_Click(object sender, EventArgs e)
+        {
+            carregarNovaJanela(new Home());
+        }
+
+        private void pictureHome_Click(object sender, EventArgs e)
+        {
+            carregarNovaJanela(new Home());
         }
     }
 }

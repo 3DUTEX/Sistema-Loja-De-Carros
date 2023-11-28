@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.pictureBoxSair = new System.Windows.Forms.PictureBox();
-            this.pictureSeta2 = new System.Windows.Forms.PictureBox();
-            this.pictureSeta = new System.Windows.Forms.PictureBox();
-            this.btSair = new System.Windows.Forms.Button();
-            this.panelExibir = new System.Windows.Forms.Panel();
-            this.btInicio = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelSubVeiculo = new System.Windows.Forms.Panel();
             this.btConsultarVeiculo = new System.Windows.Forms.Button();
             this.btCadastrarVeiculo = new System.Windows.Forms.Button();
@@ -44,17 +37,30 @@
             this.btConsultarCliente = new System.Windows.Forms.Button();
             this.btCadastrarCli = new System.Windows.Forms.Button();
             this.btCliente = new System.Windows.Forms.Button();
+            this.btInicio = new System.Windows.Forms.Button();
+            this.btSair = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelExibir = new System.Windows.Forms.Panel();
+            this.pictureHome = new System.Windows.Forms.PictureBox();
+            this.pictureSeta = new System.Windows.Forms.PictureBox();
+            this.pictureSeta2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSair = new System.Windows.Forms.PictureBox();
+            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSair)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSeta2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSeta)).BeginInit();
             this.panelSubVeiculo.SuspendLayout();
             this.panelSubCliente.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSeta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSeta2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panelMenu.Controls.Add(this.pictureHome);
             this.panelMenu.Controls.Add(this.pictureSeta);
             this.panelMenu.Controls.Add(this.panelSubVeiculo);
             this.panelMenu.Controls.Add(this.pictureSeta2);
@@ -71,104 +77,13 @@
             this.panelMenu.Size = new System.Drawing.Size(200, 450);
             this.panelMenu.TabIndex = 6;
             // 
-            // pictureBoxSair
-            // 
-            this.pictureBoxSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxSair.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_saída_de_emergência_50;
-            this.pictureBoxSair.Location = new System.Drawing.Point(166, 419);
-            this.pictureBoxSair.Name = "pictureBoxSair";
-            this.pictureBoxSair.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSair.TabIndex = 8;
-            this.pictureBoxSair.TabStop = false;
-            this.pictureBoxSair.Click += new System.EventHandler(this.pictureBoxSair_Click);
-            // 
-            // pictureSeta2
-            // 
-            this.pictureSeta2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureSeta2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureSeta2.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
-            this.pictureSeta2.Location = new System.Drawing.Point(168, 140);
-            this.pictureSeta2.Name = "pictureSeta2";
-            this.pictureSeta2.Size = new System.Drawing.Size(17, 16);
-            this.pictureSeta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureSeta2.TabIndex = 7;
-            this.pictureSeta2.TabStop = false;
-            this.pictureSeta2.Click += new System.EventHandler(this.pictureSeta2_Click);
-            // 
-            // pictureSeta
-            // 
-            this.pictureSeta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureSeta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureSeta.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
-            this.pictureSeta.Location = new System.Drawing.Point(168, 261);
-            this.pictureSeta.Name = "pictureSeta";
-            this.pictureSeta.Size = new System.Drawing.Size(17, 16);
-            this.pictureSeta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureSeta.TabIndex = 6;
-            this.pictureSeta.TabStop = false;
-            this.pictureSeta.Click += new System.EventHandler(this.pictureSeta_Click);
-            // 
-            // btSair
-            // 
-            this.btSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSair.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btSair.FlatAppearance.BorderSize = 0;
-            this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSair.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSair.ForeColor = System.Drawing.Color.White;
-            this.btSair.Location = new System.Drawing.Point(0, 410);
-            this.btSair.Name = "btSair";
-            this.btSair.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btSair.Size = new System.Drawing.Size(200, 40);
-            this.btSair.TabIndex = 5;
-            this.btSair.Text = "Sair";
-            this.btSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSair.UseVisualStyleBackColor = true;
-            this.btSair.Click += new System.EventHandler(this.btSair_Click);
-            // 
-            // panelExibir
-            // 
-            this.panelExibir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelExibir.Location = new System.Drawing.Point(200, 0);
-            this.panelExibir.Name = "panelExibir";
-            this.panelExibir.Size = new System.Drawing.Size(600, 450);
-            this.panelExibir.TabIndex = 7;
-            this.panelExibir.Paint += new System.Windows.Forms.PaintEventHandler(this.panelExibir_Paint);
-            // 
-            // btInicio
-            // 
-            this.btInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btInicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btInicio.FlatAppearance.BorderSize = 0;
-            this.btInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btInicio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInicio.ForeColor = System.Drawing.Color.White;
-            this.btInicio.Location = new System.Drawing.Point(0, 87);
-            this.btInicio.Name = "btInicio";
-            this.btInicio.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btInicio.Size = new System.Drawing.Size(200, 40);
-            this.btInicio.TabIndex = 10;
-            this.btInicio.Text = "Inicio";
-            this.btInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btInicio.UseVisualStyleBackColor = false;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(200, 87);
-            this.panelLogo.TabIndex = 0;
-            // 
             // panelSubVeiculo
             // 
             this.panelSubVeiculo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.panelSubVeiculo.Controls.Add(this.btConsultarVeiculo);
             this.panelSubVeiculo.Controls.Add(this.btCadastrarVeiculo);
             this.panelSubVeiculo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubVeiculo.Location = new System.Drawing.Point(0, 288);
+            this.panelSubVeiculo.Location = new System.Drawing.Point(0, 310);
             this.panelSubVeiculo.Name = "panelSubVeiculo";
             this.panelSubVeiculo.Size = new System.Drawing.Size(200, 81);
             this.panelSubVeiculo.TabIndex = 14;
@@ -215,7 +130,7 @@
             this.btVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVeiculo.ForeColor = System.Drawing.Color.White;
-            this.btVeiculo.Location = new System.Drawing.Point(0, 248);
+            this.btVeiculo.Location = new System.Drawing.Point(0, 270);
             this.btVeiculo.Name = "btVeiculo";
             this.btVeiculo.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.btVeiculo.Size = new System.Drawing.Size(200, 40);
@@ -230,7 +145,7 @@
             this.panelSubCliente.Controls.Add(this.btConsultarCliente);
             this.panelSubCliente.Controls.Add(this.btCadastrarCli);
             this.panelSubCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubCliente.Location = new System.Drawing.Point(0, 167);
+            this.panelSubCliente.Location = new System.Drawing.Point(0, 189);
             this.panelSubCliente.Name = "panelSubCliente";
             this.panelSubCliente.Size = new System.Drawing.Size(200, 81);
             this.panelSubCliente.TabIndex = 12;
@@ -277,7 +192,7 @@
             this.btCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCliente.ForeColor = System.Drawing.Color.White;
-            this.btCliente.Location = new System.Drawing.Point(0, 127);
+            this.btCliente.Location = new System.Drawing.Point(0, 149);
             this.btCliente.Name = "btCliente";
             this.btCliente.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.btCliente.Size = new System.Drawing.Size(200, 40);
@@ -285,6 +200,123 @@
             this.btCliente.Text = "Cliente";
             this.btCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCliente.UseVisualStyleBackColor = true;
+            // 
+            // btInicio
+            // 
+            this.btInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btInicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btInicio.FlatAppearance.BorderSize = 0;
+            this.btInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInicio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicio.ForeColor = System.Drawing.Color.White;
+            this.btInicio.Location = new System.Drawing.Point(0, 109);
+            this.btInicio.Name = "btInicio";
+            this.btInicio.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btInicio.Size = new System.Drawing.Size(200, 40);
+            this.btInicio.TabIndex = 10;
+            this.btInicio.Text = "Inicio";
+            this.btInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btInicio.UseVisualStyleBackColor = false;
+            this.btInicio.Click += new System.EventHandler(this.btInicio_Click);
+            // 
+            // btSair
+            // 
+            this.btSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSair.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btSair.FlatAppearance.BorderSize = 0;
+            this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSair.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.ForeColor = System.Drawing.Color.White;
+            this.btSair.Location = new System.Drawing.Point(0, 410);
+            this.btSair.Name = "btSair";
+            this.btSair.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btSair.Size = new System.Drawing.Size(200, 40);
+            this.btSair.TabIndex = 5;
+            this.btSair.Text = "Sair";
+            this.btSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSair.UseVisualStyleBackColor = true;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.pictureLogo);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(200, 109);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // panelExibir
+            // 
+            this.panelExibir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelExibir.Location = new System.Drawing.Point(200, 0);
+            this.panelExibir.Name = "panelExibir";
+            this.panelExibir.Size = new System.Drawing.Size(600, 450);
+            this.panelExibir.TabIndex = 7;
+            // 
+            // pictureHome
+            // 
+            this.pictureHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureHome.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_casa_50__2_;
+            this.pictureHome.Location = new System.Drawing.Point(164, 117);
+            this.pictureHome.Name = "pictureHome";
+            this.pictureHome.Size = new System.Drawing.Size(24, 24);
+            this.pictureHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureHome.TabIndex = 15;
+            this.pictureHome.TabStop = false;
+            this.pictureHome.Click += new System.EventHandler(this.pictureHome_Click);
+            // 
+            // pictureSeta
+            // 
+            this.pictureSeta.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureSeta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureSeta.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
+            this.pictureSeta.Location = new System.Drawing.Point(168, 283);
+            this.pictureSeta.Name = "pictureSeta";
+            this.pictureSeta.Size = new System.Drawing.Size(17, 16);
+            this.pictureSeta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureSeta.TabIndex = 6;
+            this.pictureSeta.TabStop = false;
+            this.pictureSeta.Click += new System.EventHandler(this.pictureSeta_Click);
+            // 
+            // pictureSeta2
+            // 
+            this.pictureSeta2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureSeta2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureSeta2.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
+            this.pictureSeta2.Location = new System.Drawing.Point(168, 161);
+            this.pictureSeta2.Name = "pictureSeta2";
+            this.pictureSeta2.Size = new System.Drawing.Size(17, 16);
+            this.pictureSeta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureSeta2.TabIndex = 7;
+            this.pictureSeta2.TabStop = false;
+            this.pictureSeta2.Click += new System.EventHandler(this.pictureSeta2_Click);
+            // 
+            // pictureBoxSair
+            // 
+            this.pictureBoxSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxSair.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_saída_de_emergência_50;
+            this.pictureBoxSair.Location = new System.Drawing.Point(166, 419);
+            this.pictureBoxSair.Name = "pictureBoxSair";
+            this.pictureBoxSair.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSair.TabIndex = 8;
+            this.pictureBoxSair.TabStop = false;
+            this.pictureBoxSair.Click += new System.EventHandler(this.pictureBoxSair_Click);
+            // 
+            // pictureLogo
+            // 
+            this.pictureLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureLogo.Image = global::SistemaLojaDeCarros.Properties.Resources.logo_removebg_preview__1_;
+            this.pictureLogo.Location = new System.Drawing.Point(21, -3);
+            this.pictureLogo.Name = "pictureLogo";
+            this.pictureLogo.Size = new System.Drawing.Size(152, 115);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureLogo.TabIndex = 0;
+            this.pictureLogo.TabStop = false;
+            this.pictureLogo.Click += new System.EventHandler(this.pictureLogo_Click);
             // 
             // MenuTela
             // 
@@ -297,11 +329,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSair)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSeta2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSeta)).EndInit();
             this.panelSubVeiculo.ResumeLayout(false);
             this.panelSubCliente.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSeta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSeta2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -323,5 +358,7 @@
         private System.Windows.Forms.Button btCadastrarCli;
         private System.Windows.Forms.Button btCliente;
         private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.PictureBox pictureLogo;
+        private System.Windows.Forms.PictureBox pictureHome;
     }
 }
