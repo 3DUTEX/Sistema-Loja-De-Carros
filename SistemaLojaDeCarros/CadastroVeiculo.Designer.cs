@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTituloVeiculo = new System.Windows.Forms.Label();
             this.lblModelo = new System.Windows.Forms.Label();
             this.txtBoxModelo = new System.Windows.Forms.TextBox();
             this.lblFabricante = new System.Windows.Forms.Label();
@@ -46,23 +45,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVeiculo)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblTituloVeiculo
-            // 
-            this.lblTituloVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTituloVeiculo.AutoSize = true;
-            this.lblTituloVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloVeiculo.Location = new System.Drawing.Point(186, 59);
-            this.lblTituloVeiculo.Name = "lblTituloVeiculo";
-            this.lblTituloVeiculo.Size = new System.Drawing.Size(315, 25);
-            this.lblTituloVeiculo.TabIndex = 15;
-            this.lblTituloVeiculo.Text = "Insira as informações do cliente";
-            // 
             // lblModelo
             // 
             this.lblModelo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblModelo.AutoSize = true;
             this.lblModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModelo.Location = new System.Drawing.Point(186, 140);
+            this.lblModelo.Location = new System.Drawing.Point(186, 118);
             this.lblModelo.Name = "lblModelo";
             this.lblModelo.Size = new System.Drawing.Size(89, 25);
             this.lblModelo.TabIndex = 16;
@@ -72,9 +60,8 @@
             // 
             this.txtBoxModelo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxModelo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxModelo.Enabled = false;
             this.txtBoxModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxModelo.Location = new System.Drawing.Point(280, 139);
+            this.txtBoxModelo.Location = new System.Drawing.Point(280, 114);
             this.txtBoxModelo.Name = "txtBoxModelo";
             this.txtBoxModelo.Size = new System.Drawing.Size(209, 31);
             this.txtBoxModelo.TabIndex = 17;
@@ -84,7 +71,7 @@
             this.lblFabricante.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFabricante.AutoSize = true;
             this.lblFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFabricante.Location = new System.Drawing.Point(155, 193);
+            this.lblFabricante.Location = new System.Drawing.Point(155, 161);
             this.lblFabricante.Name = "lblFabricante";
             this.lblFabricante.Size = new System.Drawing.Size(120, 25);
             this.lblFabricante.TabIndex = 18;
@@ -94,9 +81,8 @@
             // 
             this.txtBoxFabricante.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxFabricante.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxFabricante.Enabled = false;
             this.txtBoxFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxFabricante.Location = new System.Drawing.Point(280, 192);
+            this.txtBoxFabricante.Location = new System.Drawing.Point(280, 159);
             this.txtBoxFabricante.Name = "txtBoxFabricante";
             this.txtBoxFabricante.Size = new System.Drawing.Size(209, 31);
             this.txtBoxFabricante.TabIndex = 19;
@@ -106,7 +92,7 @@
             this.lblPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPlaca.AutoSize = true;
             this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaca.Location = new System.Drawing.Point(203, 247);
+            this.lblPlaca.Location = new System.Drawing.Point(203, 208);
             this.lblPlaca.Name = "lblPlaca";
             this.lblPlaca.Size = new System.Drawing.Size(72, 25);
             this.lblPlaca.TabIndex = 20;
@@ -116,9 +102,8 @@
             // 
             this.txtBoxPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxPlaca.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxPlaca.Enabled = false;
             this.txtBoxPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxPlaca.Location = new System.Drawing.Point(280, 244);
+            this.txtBoxPlaca.Location = new System.Drawing.Point(280, 204);
             this.txtBoxPlaca.Name = "txtBoxPlaca";
             this.txtBoxPlaca.Size = new System.Drawing.Size(209, 31);
             this.txtBoxPlaca.TabIndex = 21;
@@ -128,7 +113,7 @@
             this.lblCor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCor.AutoSize = true;
             this.lblCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCor.Location = new System.Drawing.Point(223, 298);
+            this.lblCor.Location = new System.Drawing.Point(223, 252);
             this.lblCor.Name = "lblCor";
             this.lblCor.Size = new System.Drawing.Size(52, 25);
             this.lblCor.TabIndex = 22;
@@ -138,9 +123,8 @@
             // 
             this.txtBoxCor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxCor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxCor.Enabled = false;
             this.txtBoxCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxCor.Location = new System.Drawing.Point(280, 297);
+            this.txtBoxCor.Location = new System.Drawing.Point(280, 249);
             this.txtBoxCor.Name = "txtBoxCor";
             this.txtBoxCor.Size = new System.Drawing.Size(209, 31);
             this.txtBoxCor.TabIndex = 23;
@@ -150,7 +134,7 @@
             this.lblDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(161, 351);
+            this.lblDescricao.Location = new System.Drawing.Point(161, 299);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(114, 25);
             this.lblDescricao.TabIndex = 24;
@@ -160,9 +144,8 @@
             // 
             this.txtBoxDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxDescricao.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxDescricao.Enabled = false;
             this.txtBoxDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxDescricao.Location = new System.Drawing.Point(280, 348);
+            this.txtBoxDescricao.Location = new System.Drawing.Point(280, 296);
             this.txtBoxDescricao.Name = "txtBoxDescricao";
             this.txtBoxDescricao.Size = new System.Drawing.Size(209, 31);
             this.txtBoxDescricao.TabIndex = 25;
@@ -172,7 +155,7 @@
             this.lblImagem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblImagem.AutoSize = true;
             this.lblImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagem.Location = new System.Drawing.Point(182, 404);
+            this.lblImagem.Location = new System.Drawing.Point(182, 346);
             this.lblImagem.Name = "lblImagem";
             this.lblImagem.Size = new System.Drawing.Size(93, 25);
             this.lblImagem.TabIndex = 26;
@@ -180,18 +163,20 @@
             // 
             // pictureBoxVeiculo
             // 
-            this.pictureBoxVeiculo.Location = new System.Drawing.Point(280, 404);
+            this.pictureBoxVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxVeiculo.Location = new System.Drawing.Point(280, 346);
             this.pictureBoxVeiculo.Name = "pictureBoxVeiculo";
-            this.pictureBoxVeiculo.Size = new System.Drawing.Size(209, 144);
+            this.pictureBoxVeiculo.Size = new System.Drawing.Size(209, 127);
             this.pictureBoxVeiculo.TabIndex = 27;
             this.pictureBoxVeiculo.TabStop = false;
             // 
             // btnInserirVeiculo
             // 
+            this.btnInserirVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnInserirVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInserirVeiculo.Location = new System.Drawing.Point(231, 574);
+            this.btnInserirVeiculo.Location = new System.Drawing.Point(289, 488);
             this.btnInserirVeiculo.Name = "btnInserirVeiculo";
-            this.btnInserirVeiculo.Size = new System.Drawing.Size(207, 60);
+            this.btnInserirVeiculo.Size = new System.Drawing.Size(144, 34);
             this.btnInserirVeiculo.TabIndex = 28;
             this.btnInserirVeiculo.Text = "Inserir";
             this.btnInserirVeiculo.UseVisualStyleBackColor = true;
@@ -199,8 +184,9 @@
             // 
             // btnBrowseImg
             // 
+            this.btnBrowseImg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBrowseImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowseImg.Location = new System.Drawing.Point(495, 520);
+            this.btnBrowseImg.Location = new System.Drawing.Point(495, 445);
             this.btnBrowseImg.Name = "btnBrowseImg";
             this.btnBrowseImg.Size = new System.Drawing.Size(96, 28);
             this.btnBrowseImg.TabIndex = 29;
@@ -227,7 +213,6 @@
             this.Controls.Add(this.lblFabricante);
             this.Controls.Add(this.txtBoxModelo);
             this.Controls.Add(this.lblModelo);
-            this.Controls.Add(this.lblTituloVeiculo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CadastroVeiculo";
             this.Text = "CadastroVeiculo";
@@ -238,7 +223,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblTituloVeiculo;
         private System.Windows.Forms.Label lblModelo;
         private System.Windows.Forms.TextBox txtBoxModelo;
         private System.Windows.Forms.Label lblFabricante;

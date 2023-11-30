@@ -21,5 +21,11 @@ namespace SistemaLojaDeCarros
         {
             lblUsuConectado.Text = LoginTela.usuarioConectado;
         }
+
+        private void Home_Resize(object sender, EventArgs e)
+        { 
+            lblWelcome.Font = new Font("Arial Rounded MT Bold", 20);
+            lblUsuConectado.Font = new Font("Arial Rounded MT Bold", 20);
+        }
     }
 }

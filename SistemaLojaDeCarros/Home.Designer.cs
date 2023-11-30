@@ -36,8 +36,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::SistemaLojaDeCarros.Properties.Resources.logo_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(175, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(437, 336);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -46,9 +47,10 @@
             // 
             // lblWelcome
             // 
+            this.lblWelcome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(162, 406);
+            this.lblWelcome.Location = new System.Drawing.Point(172, 392);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(228, 18);
             this.lblWelcome.TabIndex = 1;
@@ -56,9 +58,10 @@
             // 
             // lblUsuConectado
             // 
+            this.lblUsuConectado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsuConectado.AutoSize = true;
             this.lblUsuConectado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuConectado.Location = new System.Drawing.Point(391, 407);
+            this.lblUsuConectado.Location = new System.Drawing.Point(549, 392);
             this.lblUsuConectado.Name = "lblUsuConectado";
             this.lblUsuConectado.Size = new System.Drawing.Size(0, 18);
             this.lblUsuConectado.TabIndex = 2;
@@ -67,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.ClientSize = new System.Drawing.Size(816, 489);
             this.Controls.Add(this.lblUsuConectado);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.pictureBox1);
@@ -76,6 +79,7 @@
             this.Name = "Home";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
+            this.Resize += new System.EventHandler(this.Home_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
