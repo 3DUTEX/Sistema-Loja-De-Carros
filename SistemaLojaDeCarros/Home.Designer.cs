@@ -37,7 +37,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SistemaLojaDeCarros.Properties.Resources.logo_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(187, -38);
+            this.pictureBox1.Location = new System.Drawing.Point(71, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(437, 336);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -48,7 +48,7 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(212, 312);
+            this.lblWelcome.Location = new System.Drawing.Point(162, 406);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(228, 18);
             this.lblWelcome.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             this.lblUsuConectado.AutoSize = true;
             this.lblUsuConectado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuConectado.Location = new System.Drawing.Point(445, 315);
+            this.lblUsuConectado.Location = new System.Drawing.Point(391, 407);
             this.lblUsuConectado.Name = "lblUsuConectado";
             this.lblUsuConectado.Size = new System.Drawing.Size(0, 18);
             this.lblUsuConectado.TabIndex = 2;
@@ -67,10 +67,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 861);
             this.Controls.Add(this.lblUsuConectado);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "Home";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);

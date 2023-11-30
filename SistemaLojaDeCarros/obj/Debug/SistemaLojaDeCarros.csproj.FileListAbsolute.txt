@@ -295,3 +295,4 @@ C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\Siste
 C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.csproj.CopyComplete
 C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.exe
 C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.pdb
+C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.Home.resources

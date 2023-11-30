@@ -76,7 +76,7 @@
             this.lblPesqModelo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPesqModelo.AutoSize = true;
             this.lblPesqModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPesqModelo.Location = new System.Drawing.Point(183, 152);
+            this.lblPesqModelo.Location = new System.Drawing.Point(210, 152);
             this.lblPesqModelo.Name = "lblPesqModelo";
             this.lblPesqModelo.Size = new System.Drawing.Size(65, 20);
             this.lblPesqModelo.TabIndex = 10;
@@ -86,7 +86,7 @@
             // 
             this.txtPesqModelo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPesqModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesqModelo.Location = new System.Drawing.Point(254, 145);
+            this.txtPesqModelo.Location = new System.Drawing.Point(278, 145);
             this.txtPesqModelo.Name = "txtPesqModelo";
             this.txtPesqModelo.Size = new System.Drawing.Size(175, 31);
             this.txtPesqModelo.TabIndex = 11;
@@ -96,7 +96,7 @@
             this.lblPesqPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPesqPlaca.AutoSize = true;
             this.lblPesqPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPesqPlaca.Location = new System.Drawing.Point(504, 152);
+            this.lblPesqPlaca.Location = new System.Drawing.Point(516, 152);
             this.lblPesqPlaca.Name = "lblPesqPlaca";
             this.lblPesqPlaca.Size = new System.Drawing.Size(52, 20);
             this.lblPesqPlaca.TabIndex = 12;
@@ -106,7 +106,7 @@
             // 
             this.txtPesqPlaca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPesqPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesqPlaca.Location = new System.Drawing.Point(562, 145);
+            this.txtPesqPlaca.Location = new System.Drawing.Point(579, 145);
             this.txtPesqPlaca.Name = "txtPesqPlaca";
             this.txtPesqPlaca.Size = new System.Drawing.Size(175, 31);
             this.txtPesqPlaca.TabIndex = 13;

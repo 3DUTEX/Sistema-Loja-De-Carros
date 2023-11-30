@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.pictureHome = new System.Windows.Forms.PictureBox();
+            this.pictureSeta = new System.Windows.Forms.PictureBox();
             this.panelSubVeiculo = new System.Windows.Forms.Panel();
             this.btConsultarVeiculo = new System.Windows.Forms.Button();
             this.btCadastrarVeiculo = new System.Windows.Forms.Button();
+            this.pictureSeta2 = new System.Windows.Forms.PictureBox();
             this.btVeiculo = new System.Windows.Forms.Button();
             this.panelSubCliente = new System.Windows.Forms.Panel();
             this.btConsultarCliente = new System.Windows.Forms.Button();
             this.btCadastrarCli = new System.Windows.Forms.Button();
             this.btCliente = new System.Windows.Forms.Button();
             this.btInicio = new System.Windows.Forms.Button();
+            this.pictureBoxSair = new System.Windows.Forms.PictureBox();
             this.btSair = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelExibir = new System.Windows.Forms.Panel();
-            this.pictureHome = new System.Windows.Forms.PictureBox();
-            this.pictureSeta = new System.Windows.Forms.PictureBox();
-            this.pictureSeta2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSair = new System.Windows.Forms.PictureBox();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
+            this.panelExibir = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
-            this.panelSubVeiculo.SuspendLayout();
-            this.panelSubCliente.SuspendLayout();
-            this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSeta)).BeginInit();
+            this.panelSubVeiculo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSeta2)).BeginInit();
+            this.panelSubCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSair)).BeginInit();
+            this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +76,32 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 450);
             this.panelMenu.TabIndex = 6;
+            // 
+            // pictureHome
+            // 
+            this.pictureHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureHome.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_casa_50__2_;
+            this.pictureHome.Location = new System.Drawing.Point(164, 118);
+            this.pictureHome.Name = "pictureHome";
+            this.pictureHome.Size = new System.Drawing.Size(24, 24);
+            this.pictureHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureHome.TabIndex = 15;
+            this.pictureHome.TabStop = false;
+            this.pictureHome.Click += new System.EventHandler(this.pictureHome_Click);
+            // 
+            // pictureSeta
+            // 
+            this.pictureSeta.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureSeta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureSeta.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
+            this.pictureSeta.Location = new System.Drawing.Point(168, 161);
+            this.pictureSeta.Name = "pictureSeta";
+            this.pictureSeta.Size = new System.Drawing.Size(17, 16);
+            this.pictureSeta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureSeta.TabIndex = 6;
+            this.pictureSeta.TabStop = false;
+            this.pictureSeta.Click += new System.EventHandler(this.pictureSeta_Click);
             // 
             // panelSubVeiculo
             // 
@@ -104,6 +130,7 @@
             this.btConsultarVeiculo.Text = "Consultar Veículo";
             this.btConsultarVeiculo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btConsultarVeiculo.UseVisualStyleBackColor = true;
+            this.btConsultarVeiculo.Click += new System.EventHandler(this.btConsultarVeiculo_Click);
             // 
             // btCadastrarVeiculo
             // 
@@ -121,6 +148,20 @@
             this.btCadastrarVeiculo.Text = "Cadastrar Veículo";
             this.btCadastrarVeiculo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCadastrarVeiculo.UseVisualStyleBackColor = true;
+            this.btCadastrarVeiculo.Click += new System.EventHandler(this.btCadastrarVeiculo_Click);
+            // 
+            // pictureSeta2
+            // 
+            this.pictureSeta2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureSeta2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureSeta2.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
+            this.pictureSeta2.Location = new System.Drawing.Point(168, 283);
+            this.pictureSeta2.Name = "pictureSeta2";
+            this.pictureSeta2.Size = new System.Drawing.Size(17, 16);
+            this.pictureSeta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureSeta2.TabIndex = 7;
+            this.pictureSeta2.TabStop = false;
+            this.pictureSeta2.Click += new System.EventHandler(this.pictureSeta2_Click);
             // 
             // btVeiculo
             // 
@@ -138,6 +179,7 @@
             this.btVeiculo.Text = "Veículo";
             this.btVeiculo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btVeiculo.UseVisualStyleBackColor = true;
+            this.btVeiculo.Click += new System.EventHandler(this.btVeiculo_Click);
             // 
             // panelSubCliente
             // 
@@ -166,6 +208,7 @@
             this.btConsultarCliente.Text = "Consultar Cliente";
             this.btConsultarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btConsultarCliente.UseVisualStyleBackColor = true;
+            this.btConsultarCliente.Click += new System.EventHandler(this.btConsultarCliente_Click);
             // 
             // btCadastrarCli
             // 
@@ -183,6 +226,7 @@
             this.btCadastrarCli.Text = "Cadastrar Cliente";
             this.btCadastrarCli.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCadastrarCli.UseVisualStyleBackColor = true;
+            this.btCadastrarCli.Click += new System.EventHandler(this.btCadastrarCli_Click);
             // 
             // btCliente
             // 
@@ -200,6 +244,7 @@
             this.btCliente.Text = "Cliente";
             this.btCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btCliente.UseVisualStyleBackColor = true;
+            this.btCliente.Click += new System.EventHandler(this.btCliente_Click);
             // 
             // btInicio
             // 
@@ -219,6 +264,18 @@
             this.btInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btInicio.UseVisualStyleBackColor = false;
             this.btInicio.Click += new System.EventHandler(this.btInicio_Click);
+            // 
+            // pictureBoxSair
+            // 
+            this.pictureBoxSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxSair.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_saída_de_emergência_50;
+            this.pictureBoxSair.Location = new System.Drawing.Point(164, 419);
+            this.pictureBoxSair.Name = "pictureBoxSair";
+            this.pictureBoxSair.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSair.TabIndex = 8;
+            this.pictureBoxSair.TabStop = false;
+            this.pictureBoxSair.Click += new System.EventHandler(this.pictureBoxSair_Click);
             // 
             // btSair
             // 
@@ -247,65 +304,6 @@
             this.panelLogo.Size = new System.Drawing.Size(200, 109);
             this.panelLogo.TabIndex = 0;
             // 
-            // panelExibir
-            // 
-            this.panelExibir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelExibir.Location = new System.Drawing.Point(200, 0);
-            this.panelExibir.Name = "panelExibir";
-            this.panelExibir.Size = new System.Drawing.Size(600, 450);
-            this.panelExibir.TabIndex = 7;
-            // 
-            // pictureHome
-            // 
-            this.pictureHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureHome.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_casa_50__2_;
-            this.pictureHome.Location = new System.Drawing.Point(164, 117);
-            this.pictureHome.Name = "pictureHome";
-            this.pictureHome.Size = new System.Drawing.Size(24, 24);
-            this.pictureHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureHome.TabIndex = 15;
-            this.pictureHome.TabStop = false;
-            this.pictureHome.Click += new System.EventHandler(this.pictureHome_Click);
-            // 
-            // pictureSeta
-            // 
-            this.pictureSeta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureSeta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureSeta.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
-            this.pictureSeta.Location = new System.Drawing.Point(168, 283);
-            this.pictureSeta.Name = "pictureSeta";
-            this.pictureSeta.Size = new System.Drawing.Size(17, 16);
-            this.pictureSeta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureSeta.TabIndex = 6;
-            this.pictureSeta.TabStop = false;
-            this.pictureSeta.Click += new System.EventHandler(this.pictureSeta_Click);
-            // 
-            // pictureSeta2
-            // 
-            this.pictureSeta2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureSeta2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureSeta2.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_voltar_30;
-            this.pictureSeta2.Location = new System.Drawing.Point(168, 161);
-            this.pictureSeta2.Name = "pictureSeta2";
-            this.pictureSeta2.Size = new System.Drawing.Size(17, 16);
-            this.pictureSeta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureSeta2.TabIndex = 7;
-            this.pictureSeta2.TabStop = false;
-            this.pictureSeta2.Click += new System.EventHandler(this.pictureSeta2_Click);
-            // 
-            // pictureBoxSair
-            // 
-            this.pictureBoxSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxSair.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_saída_de_emergência_50;
-            this.pictureBoxSair.Location = new System.Drawing.Point(166, 419);
-            this.pictureBoxSair.Name = "pictureBoxSair";
-            this.pictureBoxSair.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSair.TabIndex = 8;
-            this.pictureBoxSair.TabStop = false;
-            this.pictureBoxSair.Click += new System.EventHandler(this.pictureBoxSair_Click);
-            // 
             // pictureLogo
             // 
             this.pictureLogo.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -318,6 +316,14 @@
             this.pictureLogo.TabStop = false;
             this.pictureLogo.Click += new System.EventHandler(this.pictureLogo_Click);
             // 
+            // panelExibir
+            // 
+            this.panelExibir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelExibir.Location = new System.Drawing.Point(200, 0);
+            this.panelExibir.Name = "panelExibir";
+            this.panelExibir.Size = new System.Drawing.Size(600, 450);
+            this.panelExibir.TabIndex = 7;
+            // 
             // MenuTela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,14 +334,15 @@
             this.Name = "MenuTela";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Resize += new System.EventHandler(this.MenuTela_Resize);
             this.panelMenu.ResumeLayout(false);
-            this.panelSubVeiculo.ResumeLayout(false);
-            this.panelSubCliente.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSeta)).EndInit();
+            this.panelSubVeiculo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureSeta2)).EndInit();
+            this.panelSubCliente.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSair)).EndInit();
+            this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.ResumeLayout(false);
 

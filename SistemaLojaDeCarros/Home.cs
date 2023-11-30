@@ -17,9 +17,9 @@ namespace SistemaLojaDeCarros
             InitializeComponent();
         }
 
-        public void Home_Load(object sender, EventArgs e)
+        private void Home_Load(object sender, EventArgs e)
         {
-
+            lblUsuConectado.Text = LoginTela.usuarioConectado;
         }
     }
 }

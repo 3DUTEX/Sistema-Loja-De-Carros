@@ -33,7 +33,6 @@ namespace SistemaLojaDeCarros
             else
                 panel.Visible = false;
         }
-
         private void btCliente_Click(object sender, EventArgs e)
         {
             showSideMenu(panelSubCliente);
@@ -54,15 +53,14 @@ namespace SistemaLojaDeCarros
             if (posicao)           
                 pictureSeta2.Location = new Point(168, 283);            
             else            
-                pictureSeta2.Location = new Point(168, 12);
+                pictureSeta2.Location = new Point(168, 200);
             
             return posicao;   
         }
-
         private void btVeiculo_Click(object sender, EventArgs e)
         {
-            showSideMenu(panelSubVeiculo);       
-            trocaImagem(panelSubVeiculo, pictureSeta2);      
+            showSideMenu(panelSubVeiculo);
+            trocaImagem(panelSubVeiculo, pictureSeta2);
         }
 
         private void pictureSeta2_Click(object sender, EventArgs e) //método de click também pra picturebox
@@ -105,6 +103,21 @@ namespace SistemaLojaDeCarros
             novaJan.Show();
         }
 
+        private void btInicio_Click(object sender, EventArgs e)
+        {
+            carregarNovaJanela(new Home());
+        }
+
+        private void pictureLogo_Click(object sender, EventArgs e)
+        {
+            carregarNovaJanela(new Home());
+        }
+
+        private void pictureHome_Click(object sender, EventArgs e)
+        {
+            carregarNovaJanela(new Home());
+        }
+
         private void btCadastrarCli_Click(object sender, EventArgs e)
         {
             carregarNovaJanela(new CadastroCliente());
@@ -125,19 +138,12 @@ namespace SistemaLojaDeCarros
             carregarNovaJanela(new ConsultarVeiculo());
         }
 
-        private void btInicio_Click(object sender, EventArgs e)
+        private void MenuTela_Resize(object sender, EventArgs e)
         {
-            carregarNovaJanela(new Home());
-        }
-
-        private void pictureLogo_Click(object sender, EventArgs e)
-        {
-            carregarNovaJanela(new Home());
-        }
-
-        private void pictureHome_Click(object sender, EventArgs e)
-        {
-            carregarNovaJanela(new Home());
+            ajustaPosicao(panelSubCliente);
+            pictureHome.Location = new Point(164,118);
+            pictureSeta.Location = new Point(168,161);       
+            pictureBoxSair.Location = new Point(164,805);
         }
     }
 }
