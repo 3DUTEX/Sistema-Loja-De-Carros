@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,7 @@ namespace SistemaLojaDeCarros
 {
     public partial class CadastroVeiculo : Form
     {
-        Banco banco = new Banco();
+        Conexao con = new Conexao();
 
         public CadastroVeiculo()
         {
@@ -57,25 +58,28 @@ namespace SistemaLojaDeCarros
 
         private void btnInserirVeiculo_Click(object sender, EventArgs e)
         {
+            string modelo = txtBoxModelo.Text;
+            string fabricante = txtBoxFabricante.Text;
+            string placa = txtBoxPlaca.Text;
+            string cor = txtBoxCor.Text;
+            string veiculo = txtBoxDescricao.Text;
+
             validaCampos();
+            string strInsertVeiculo = "INSERT INTO VEICULO(nm_modelo, nm_fabricante, nm_placa, nm_cor, ds_veiculo, imagem) VALUES(@modelo, @fabricante, @placa, @cor, @descricao, '" + pictureBoxVeiculo.Image + "')";
+            MySqlCommand cmd = new MySqlCommand(strInsertVeiculo, con.MyConnectarBD());
 
-            using (MemoryStream ms = new MemoryStream())
-            {
-                pictureBoxVeiculo.Image.Save(ms, pictureBoxVeiculo.Image.RawFormat);
-                byte[] imagem = ms.ToArray();
+            cmd.Parameters.Add("@modelo", MySqlDbType.VarChar).Value = modelo;
+            cmd.Parameters.Add("@fabricante", MySqlDbType.VarChar).Value = fabricante;
+            cmd.Parameters.Add("@placa", MySqlDbType.VarChar).Value = placa;
+            cmd.Parameters.Add("@cor", MySqlDbType.VarChar).Value = cor;
+            cmd.Parameters.Add("@descricao", MySqlDbType.VarChar).Value = veiculo;
+            
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Veículo cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpaForm();
 
-                string strInsertVeiculo = $"INSERT INTO VEICULO(nm_modelo, nm_fabricante, nm_placa, nm_cor, ds_veiculo, imagem) VALUES('{txtBoxModelo.Text}','{txtBoxFabricante.Text}'" +
-                    $"'{txtBoxPlaca.Text}', '{txtBoxCor.Text}', '{txtBoxDescricao.Text}', @imagem)";
-                bool insertVeiculo = banco.ExecuteNonQuery(strInsertVeiculo);
-
-                if (insertVeiculo)
-                {
-                    MessageBox.Show("Veículo cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    limpaForm();
-                }
-                else
-                    Util.exibeErro("Ocorreu um erro, verifique os dados e tente novamente!");
-            }
+            con.MyDesConnectionBD();
+      
         }
 
         private void limpaForm()

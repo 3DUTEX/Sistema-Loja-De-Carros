@@ -296,3 +296,11 @@ C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\Siste
 C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.exe
 C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.pdb
 C:\Users\User\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.Home.resources
+C:\Users\Felipe\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.CadastroCliente.resources
+C:\Users\Felipe\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.CadastroEndereco.resources
+C:\Users\Felipe\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.CadastroVeiculo.resources
+C:\Users\Felipe\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.ConsultarCliente.resources
+C:\Users\Felipe\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.ConsultarVeiculo.resources
+C:\Users\Felipe\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.DetalhesCliente.resources
+C:\Users\Felipe\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.Home.resources
+C:\Users\Felipe\Desktop\Sistema-Loja-De-Carros\SistemaLojaDeCarros\obj\Debug\SistemaLojaDeCarros.Veiculo.resources
