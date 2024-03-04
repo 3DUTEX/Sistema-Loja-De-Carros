@@ -18,7 +18,7 @@ namespace SistemaLojaDeCarros
             InitializeComponent();
             sideMenu();  //inicia com o menu escondido
             ajustaPosicao(panelSubCliente); //metodo que ajusta a posição inicialmente do panel cliente
-            carregarNovaJanela(new Home()); //Tela inicio 
+            carregarNovaJanela(new Home()); //Tela 
         }
     
         private void sideMenu() //escondendo menu
@@ -50,13 +50,14 @@ namespace SistemaLojaDeCarros
         private bool ajustaPosicao(Panel panel) //método que ajusta a posição da seta na tela
         {
             bool posicao = panel.Visible;
-            if (posicao)           
-                pictureSeta2.Location = new Point(168, 283);            
-            else            
+            if (posicao)
+                pictureSeta2.Location = new Point(168, 283);         
+            else          
                 pictureSeta2.Location = new Point(168, 200);
-            
+
             return posicao;   
         }
+
         private void btVeiculo_Click(object sender, EventArgs e)
         {
             showSideMenu(panelSubVeiculo);
@@ -142,8 +143,8 @@ namespace SistemaLojaDeCarros
         {
             ajustaPosicao(panelSubCliente);
             pictureHome.Location = new Point(164,118);
-            pictureSeta.Location = new Point(168,161);       
-            pictureBoxSair.Location = new Point(164,805);
+            pictureSeta.Location = new Point(168, 161);
+
         }
     }
 }

@@ -68,9 +68,9 @@
             this.panelMenu.Controls.Add(this.panelSubCliente);
             this.panelMenu.Controls.Add(this.btCliente);
             this.panelMenu.Controls.Add(this.btInicio);
+            this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Controls.Add(this.pictureBoxSair);
             this.panelMenu.Controls.Add(this.btSair);
-            this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
@@ -120,7 +120,7 @@
             this.btConsultarVeiculo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btConsultarVeiculo.FlatAppearance.BorderSize = 0;
             this.btConsultarVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btConsultarVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsultarVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btConsultarVeiculo.ForeColor = System.Drawing.Color.White;
             this.btConsultarVeiculo.Location = new System.Drawing.Point(0, 40);
             this.btConsultarVeiculo.Name = "btConsultarVeiculo";
@@ -138,7 +138,7 @@
             this.btCadastrarVeiculo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btCadastrarVeiculo.FlatAppearance.BorderSize = 0;
             this.btCadastrarVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCadastrarVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCadastrarVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadastrarVeiculo.ForeColor = System.Drawing.Color.White;
             this.btCadastrarVeiculo.Location = new System.Drawing.Point(0, 0);
             this.btCadastrarVeiculo.Name = "btCadastrarVeiculo";
@@ -169,7 +169,7 @@
             this.btVeiculo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btVeiculo.FlatAppearance.BorderSize = 0;
             this.btVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btVeiculo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVeiculo.ForeColor = System.Drawing.Color.White;
             this.btVeiculo.Location = new System.Drawing.Point(0, 270);
             this.btVeiculo.Name = "btVeiculo";
@@ -198,7 +198,7 @@
             this.btConsultarCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btConsultarCliente.FlatAppearance.BorderSize = 0;
             this.btConsultarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btConsultarCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsultarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btConsultarCliente.ForeColor = System.Drawing.Color.White;
             this.btConsultarCliente.Location = new System.Drawing.Point(0, 40);
             this.btConsultarCliente.Name = "btConsultarCliente";
@@ -216,7 +216,7 @@
             this.btCadastrarCli.Dock = System.Windows.Forms.DockStyle.Top;
             this.btCadastrarCli.FlatAppearance.BorderSize = 0;
             this.btCadastrarCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCadastrarCli.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCadastrarCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadastrarCli.ForeColor = System.Drawing.Color.White;
             this.btCadastrarCli.Location = new System.Drawing.Point(0, 0);
             this.btCadastrarCli.Name = "btCadastrarCli";
@@ -234,7 +234,7 @@
             this.btCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btCliente.FlatAppearance.BorderSize = 0;
             this.btCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCliente.ForeColor = System.Drawing.Color.White;
             this.btCliente.Location = new System.Drawing.Point(0, 149);
             this.btCliente.Name = "btCliente";
@@ -253,7 +253,7 @@
             this.btInicio.Dock = System.Windows.Forms.DockStyle.Top;
             this.btInicio.FlatAppearance.BorderSize = 0;
             this.btInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btInicio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btInicio.ForeColor = System.Drawing.Color.White;
             this.btInicio.Location = new System.Drawing.Point(0, 109);
             this.btInicio.Name = "btInicio";
@@ -267,9 +267,10 @@
             // 
             // pictureBoxSair
             // 
+            this.pictureBoxSair.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBoxSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxSair.Image = global::SistemaLojaDeCarros.Properties.Resources.icons8_saída_de_emergência_50;
-            this.pictureBoxSair.Location = new System.Drawing.Point(164, 419);
+            this.pictureBoxSair.Location = new System.Drawing.Point(166, 418);
             this.pictureBoxSair.Name = "pictureBoxSair";
             this.pictureBoxSair.Size = new System.Drawing.Size(24, 24);
             this.pictureBoxSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,7 +284,7 @@
             this.btSair.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btSair.FlatAppearance.BorderSize = 0;
             this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSair.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSair.ForeColor = System.Drawing.Color.White;
             this.btSair.Location = new System.Drawing.Point(0, 410);
             this.btSair.Name = "btSair";

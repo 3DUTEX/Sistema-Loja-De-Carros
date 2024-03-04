@@ -142,9 +142,6 @@
     <Compile Include="DetalhesCliente.Designer.cs">
       <DependentUpon>DetalhesCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="EstilizacaoButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
